@@ -1,0 +1,60 @@
+apiVersion: v1
+items:
+  - apiVersion: metrics.k8s.io/v1beta1
+    containers:
+      - name: catalog
+        usage:
+          cpu: 182106n
+          memory: 8268Ki
+    kind: PodMetrics
+    metadata:
+      labels:
+        app.kubernetes.io/component: service
+        app.kubernetes.io/created-by: eks-workshop
+        app.kubernetes.io/instance: catalog
+        app.kubernetes.io/name: catalog
+        pod-template-hash: 7bc7d5c444
+      name: catalog-7bc7d5c444-rzh7h
+      namespace: catalog
+    timestamp: "2026-10-18T14:45:03Z"
+    window: 14.799s
+  - apiVersion: metrics.k8s.io/v1beta1
+    containers:
+      - name: mysql
+        usage:
+          cpu: 1806083n
+          memory: 398704Ki
+    kind: PodMetrics
+    metadata:
+      labels:
+        app.kubernetes.io/component: mysql
+        app.kubernetes.io/created-by: eks-workshop
+        app.kubernetes.io/instance: catalog
+        app.kubernetes.io/name: catalog
+        app.kubernetes.io/team: database
+        apps.kubernetes.io/pod-index: "0"
+        controller-revision-hash: catalog-mysql-5d88699d8b
+        statefulset.kubernetes.io/pod-name: catalog-mysql-0
+      name: catalog-mysql-0
+      namespace: catalog
+    timestamp: "2026-10-18T14:44:54Z"
+    window: 17.884s
+  - apiVersion: metrics.k8s.io/v1beta1
+    containers:
+      - name: catalog
+        usage:
+          cpu: "0"
+          memory: 7800Ki
+    kind: PodMetrics
+    metadata:
+      labels:
+        app.kubernetes.io/component: service
+        app.kubernetes.io/created-by: eks-workshop
+        app.kubernetes.io/name: catalog
+      name: catalog-pod
+      namespace: catalog
+    timestamp: "2026-10-18T14:45:05Z"
+    window: 33.374s
+kind: List
+metadata:
+  resourceVersion: ""

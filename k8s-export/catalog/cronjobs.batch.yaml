@@ -1,0 +1,51 @@
+apiVersion: v1
+items:
+  - apiVersion: batch/v1
+    kind: CronJob
+    metadata:
+      annotations: {}
+      labels:
+        app.kubernetes.io/created-by: eks-workshop
+        app.kubernetes.io/name: catalog-cleanup
+      name: catalog-cleanup
+      namespace: catalog
+    spec:
+      concurrencyPolicy: Allow
+      failedJobsHistoryLimit: 1
+      jobTemplate:
+        metadata: {}
+        spec:
+          template:
+            metadata:
+              labels:
+                app: catalog-cleanup
+            spec:
+              containers:
+                - command:
+                    - /bin/sh
+                    - -c
+                    - "echo \"Starting cleanup job at $(date)\"\necho \"Checking for temporary files...\"\n\n# Simulate finding and cleaning up files\necho \"Found 3 temporary files to clean up:\"\necho \"  - /tmp/cache_file_1.tmp\"\necho \"  - /tmp/cache_file_2.tmp\" \necho \"  - /tmp/old_log.log\"\n\n# Simulate cleanup process\nsleep 3\necho \"Cleaning up temporary files...\"\nsleep 2\necho \"Temporary files removed successfully\"\n\necho \"Cleanup completed at $(date)\"\necho \"Next cleanup scheduled in 1 minute\"\n"
+                  image: busybox:1.36
+                  imagePullPolicy: IfNotPresent
+                  name: cleanup
+                  resources:
+                    limits:
+                      cpu: 100m
+                      memory: 128Mi
+                    requests:
+                      cpu: 50m
+                      memory: 64Mi
+                  terminationMessagePath: /dev/termination-log
+                  terminationMessagePolicy: File
+              dnsPolicy: ClusterFirst
+              restartPolicy: OnFailure
+              schedulerName: default-scheduler
+              securityContext: {}
+              terminationGracePeriodSeconds: 30
+      schedule: '*/1 * * * *'
+      successfulJobsHistoryLimit: 3
+      suspend: false
+      timeZone: UTC
+kind: List
+metadata:
+  resourceVersion: ""

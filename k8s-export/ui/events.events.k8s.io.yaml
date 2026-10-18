@@ -1,0 +1,1963 @@
+apiVersion: v1
+items:
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:13:40.694047Z"
+    kind: Event
+    metadata:
+      name: ui-58474649bf-7w2bp.18dfa53448be3159
+      namespace: ui
+    note: Successfully assigned ui/ui-58474649bf-7w2bp to ip-10-42-186-205.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-58474649bf-7w2bp
+      namespace: ui
+      resourceVersion: "1076482"
+      uid: 2be8b97d-1477-4120-ace2-6755a762a766
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 2
+    deprecatedFirstTimestamp: "2026-10-18T14:13:41Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:55Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-58474649bf-7w2bp.18dfa53467557cff
+      namespace: ui
+    note: Pulling image "public.ecr.aws/aws-containers/retail-store-sample-ui:v2"
+    reason: Pulling
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-58474649bf-7w2bp
+      namespace: ui
+      resourceVersion: "1076483"
+      uid: 2be8b97d-1477-4120-ace2-6755a762a766
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 2
+    deprecatedFirstTimestamp: "2026-10-18T14:13:41Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:55Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-58474649bf-7w2bp.18dfa534743b9ee5
+      namespace: ui
+    note: 'Failed to pull image "public.ecr.aws/aws-containers/retail-store-sample-ui:v2": rpc error: code = NotFound desc = failed to pull and unpack image "public.ecr.aws/aws-containers/retail-store-sample-ui:v2": failed to resolve reference "public.ecr.aws/aws-containers/retail-store-sample-ui:v2": public.ecr.aws/aws-containers/retail-store-sample-ui:v2: not found'
+    reason: Failed
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-58474649bf-7w2bp
+      namespace: ui
+      resourceVersion: "1076483"
+      uid: 2be8b97d-1477-4120-ace2-6755a762a766
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Warning
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 2
+    deprecatedFirstTimestamp: "2026-10-18T14:13:41Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:55Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-58474649bf-7w2bp.18dfa534743c29b6
+      namespace: ui
+    note: 'Error: ErrImagePull'
+    reason: Failed
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-58474649bf-7w2bp
+      namespace: ui
+      resourceVersion: "1076483"
+      uid: 2be8b97d-1477-4120-ace2-6755a762a766
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Warning
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 2
+    deprecatedFirstTimestamp: "2026-10-18T14:13:42Z"
+    deprecatedLastTimestamp: "2026-10-18T14:14:06Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-58474649bf-7w2bp.18dfa53499b38967
+      namespace: ui
+    note: Back-off pulling image "public.ecr.aws/aws-containers/retail-store-sample-ui:v2"
+    reason: BackOff
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-58474649bf-7w2bp
+      namespace: ui
+      resourceVersion: "1076483"
+      uid: 2be8b97d-1477-4120-ace2-6755a762a766
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 2
+    deprecatedFirstTimestamp: "2026-10-18T14:13:42Z"
+    deprecatedLastTimestamp: "2026-10-18T14:14:06Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-58474649bf-7w2bp.18dfa53499b3e45c
+      namespace: ui
+    note: 'Error: ImagePullBackOff'
+    reason: Failed
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-58474649bf-7w2bp
+      namespace: ui
+      resourceVersion: "1076483"
+      uid: 2be8b97d-1477-4120-ace2-6755a762a766
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Warning
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:13:40Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:40Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-58474649bf.18dfa534485e8cbc
+      namespace: ui
+    note: 'Created pod: ui-58474649bf-7w2bp'
+    reason: SuccessfulCreate
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-58474649bf
+      namespace: ui
+      resourceVersion: "1076479"
+      uid: fdddd885-d7c7-436e-8ca5-0ab82f47e147
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:14:09Z"
+    deprecatedLastTimestamp: "2026-10-18T14:14:09Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-58474649bf.18dfa53ae862e4d4
+      namespace: ui
+    note: 'Deleted pod: ui-58474649bf-7w2bp'
+    reason: SuccessfulDelete
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-58474649bf
+      namespace: ui
+      resourceVersion: "1076605"
+      uid: fdddd885-d7c7-436e-8ca5-0ab82f47e147
+    reportingController: replicaset-controller
+    type: Normal
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:24:21.462560Z"
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-8jmjv.18dfa5c97985cbef
+      namespace: ui
+    note: Successfully assigned ui/ui-595d9d568f-8jmjv to ip-10-42-108-77.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-595d9d568f-8jmjv
+      namespace: ui
+      resourceVersion: "1078987"
+      uid: 09c544f8-426c-41ca-93fb-c1ffd9102d68
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-8jmjv.18dfa5c9978faee7
+      namespace: ui
+    note: Container image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" already present on machine
+    reason: Pulled
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-8jmjv
+      namespace: ui
+      resourceVersion: "1078989"
+      uid: 09c544f8-426c-41ca-93fb-c1ffd9102d68
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-8jmjv.18dfa5c9996ef013
+      namespace: ui
+    note: 'Created container: ui'
+    reason: Created
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-8jmjv
+      namespace: ui
+      resourceVersion: "1078989"
+      uid: 09c544f8-426c-41ca-93fb-c1ffd9102d68
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:22Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:22Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-8jmjv.18dfa5c99d38ca82
+      namespace: ui
+    note: Started container ui
+    reason: Started
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-8jmjv
+      namespace: ui
+      resourceVersion: "1078989"
+      uid: 09c544f8-426c-41ca-93fb-c1ffd9102d68
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-8jmjv.18dfa639c2918e91
+      namespace: ui
+    note: Stopping container ui
+    reason: Killing
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-8jmjv
+      namespace: ui
+      resourceVersion: "1078989"
+      uid: 09c544f8-426c-41ca-93fb-c1ffd9102d68
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:27:25.246116Z"
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-njqwn.18dfa5f443e044ec
+      namespace: ui
+    note: Successfully assigned ui/ui-595d9d568f-njqwn to ip-10-42-133-47.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-595d9d568f-njqwn
+      namespace: ui
+      resourceVersion: "1079745"
+      uid: 993fe09d-2ea8-4797-bc57-5850e25d020a
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedLastTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-njqwn.18dfa5f460576292
+      namespace: ui
+    note: Container image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" already present on machine
+    reason: Pulled
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-njqwn
+      namespace: ui
+      resourceVersion: "1079746"
+      uid: 993fe09d-2ea8-4797-bc57-5850e25d020a
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedLastTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-njqwn.18dfa5f461d0b473
+      namespace: ui
+    note: 'Created container: ui'
+    reason: Created
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-njqwn
+      namespace: ui
+      resourceVersion: "1079746"
+      uid: 993fe09d-2ea8-4797-bc57-5850e25d020a
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedLastTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-njqwn.18dfa5f46856aaa9
+      namespace: ui
+    note: Started container ui
+    reason: Started
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-njqwn
+      namespace: ui
+      resourceVersion: "1079746"
+      uid: 993fe09d-2ea8-4797-bc57-5850e25d020a
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-njqwn.18dfa639c294f1a9
+      namespace: ui
+    note: Stopping container ui
+    reason: Killing
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-njqwn
+      namespace: ui
+      resourceVersion: "1079746"
+      uid: 993fe09d-2ea8-4797-bc57-5850e25d020a
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:27:25.266801Z"
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-w8zqk.18dfa5f4451be7c2
+      namespace: ui
+    note: Successfully assigned ui/ui-595d9d568f-w8zqk to ip-10-42-186-205.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-595d9d568f-w8zqk
+      namespace: ui
+      resourceVersion: "1079748"
+      uid: 36c92357-699e-411e-a8ce-144fff08656e
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedLastTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-w8zqk.18dfa5f4622ba53b
+      namespace: ui
+    note: Container image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" already present on machine
+    reason: Pulled
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-w8zqk
+      namespace: ui
+      resourceVersion: "1079751"
+      uid: 36c92357-699e-411e-a8ce-144fff08656e
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedLastTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-w8zqk.18dfa5f4636c28c6
+      namespace: ui
+    note: 'Created container: ui'
+    reason: Created
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-w8zqk
+      namespace: ui
+      resourceVersion: "1079751"
+      uid: 36c92357-699e-411e-a8ce-144fff08656e
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedLastTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-w8zqk.18dfa5f4682c3ba9
+      namespace: ui
+    note: Started container ui
+    reason: Started
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-w8zqk
+      namespace: ui
+      resourceVersion: "1079751"
+      uid: 36c92357-699e-411e-a8ce-144fff08656e
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f-w8zqk.18dfa639f45f7755
+      namespace: ui
+    note: Stopping container ui
+    reason: Killing
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-595d9d568f-w8zqk
+      namespace: ui
+      resourceVersion: "1079751"
+      uid: 36c92357-699e-411e-a8ce-144fff08656e
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f.18dfa5c978f36367
+      namespace: ui
+    note: 'Created pod: ui-595d9d568f-8jmjv'
+    reason: SuccessfulCreate
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-595d9d568f
+      namespace: ui
+      resourceVersion: "1078981"
+      uid: 44b8aec6-2c72-44c3-91ac-d1f708bde4b7
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedLastTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f.18dfa5f44372f639
+      namespace: ui
+    note: 'Created pod: ui-595d9d568f-njqwn'
+    reason: SuccessfulCreate
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-595d9d568f
+      namespace: ui
+      resourceVersion: "1079741"
+      uid: 44b8aec6-2c72-44c3-91ac-d1f708bde4b7
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedLastTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f.18dfa5f4446683b1
+      namespace: ui
+    note: 'Created pod: ui-595d9d568f-w8zqk'
+    reason: SuccessfulCreate
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-595d9d568f
+      namespace: ui
+      resourceVersion: "1079741"
+      uid: 44b8aec6-2c72-44c3-91ac-d1f708bde4b7
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f.18dfa639c2a15b2f
+      namespace: ui
+    note: 'Deleted pod: ui-595d9d568f-njqwn'
+    reason: SuccessfulDelete
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-595d9d568f
+      namespace: ui
+      resourceVersion: "1080905"
+      uid: 44b8aec6-2c72-44c3-91ac-d1f708bde4b7
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f.18dfa639c2a438ef
+      namespace: ui
+    note: 'Deleted pod: ui-595d9d568f-8jmjv'
+    reason: SuccessfulDelete
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-595d9d568f
+      namespace: ui
+      resourceVersion: "1080905"
+      uid: 44b8aec6-2c72-44c3-91ac-d1f708bde4b7
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-595d9d568f.18dfa639f4831b97
+      namespace: ui
+    note: 'Deleted pod: ui-595d9d568f-w8zqk'
+    reason: SuccessfulDelete
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-595d9d568f
+      namespace: ui
+      resourceVersion: "1080937"
+      uid: 44b8aec6-2c72-44c3-91ac-d1f708bde4b7
+    reportingController: replicaset-controller
+    type: Normal
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:12:50.291708Z"
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-4kbmm.18dfa5288c87c9ff
+      namespace: ui
+    note: Successfully assigned ui/ui-65bdcb6c9-4kbmm to ip-10-42-108-77.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-65bdcb6c9-4kbmm
+      namespace: ui
+      resourceVersion: "1076227"
+      uid: ae74fcdd-f1c0-4fe7-928e-f95c8dd82de9
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-4kbmm.18dfa528ac65dcee
+      namespace: ui
+    note: Pulling image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1"
+    reason: Pulling
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-4kbmm
+      namespace: ui
+      resourceVersion: "1076228"
+      uid: ae74fcdd-f1c0-4fe7-928e-f95c8dd82de9
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-4kbmm.18dfa52a69f27592
+      namespace: ui
+    note: 'Successfully pulled image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" in 7.475s (7.475s including waiting). Image size: 325209119 bytes.'
+    reason: Pulled
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-4kbmm
+      namespace: ui
+      resourceVersion: "1076228"
+      uid: ae74fcdd-f1c0-4fe7-928e-f95c8dd82de9
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-4kbmm.18dfa52a6b1a05a5
+      namespace: ui
+    note: 'Created container: ui'
+    reason: Created
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-4kbmm
+      namespace: ui
+      resourceVersion: "1076228"
+      uid: ae74fcdd-f1c0-4fe7-928e-f95c8dd82de9
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-4kbmm.18dfa52a6f22354e
+      namespace: ui
+    note: Started container ui
+    reason: Started
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-4kbmm
+      namespace: ui
+      resourceVersion: "1076228"
+      uid: ae74fcdd-f1c0-4fe7-928e-f95c8dd82de9
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:22Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:22Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-4kbmm.18dfa5c9c58534ef
+      namespace: ui
+    note: Stopping container ui
+    reason: Killing
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-4kbmm
+      namespace: ui
+      resourceVersion: "1076228"
+      uid: ae74fcdd-f1c0-4fe7-928e-f95c8dd82de9
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-59xrq.18dfa5c975c45b03
+      namespace: ui
+    note: Stopping container ui
+    reason: Killing
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-59xrq
+      namespace: ui
+      resourceVersion: "1064935"
+      uid: f4393d46-fbb1-4d9e-a79c-4612fff7173b
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:32:23.797484Z"
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-c8crv.18dfa639c6ecafb8
+      namespace: ui
+    note: Successfully assigned ui/ui-65bdcb6c9-c8crv to ip-10-42-108-77.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-65bdcb6c9-c8crv
+      namespace: ui
+      resourceVersion: "1080920"
+      uid: e6f53221-5520-467e-afa2-46cb2c77b186
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-c8crv.18dfa639e5dbfeab
+      namespace: ui
+    note: Container image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" already present on machine
+    reason: Pulled
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-c8crv
+      namespace: ui
+      resourceVersion: "1080921"
+      uid: e6f53221-5520-467e-afa2-46cb2c77b186
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-c8crv.18dfa639e7ae5450
+      namespace: ui
+    note: 'Created container: ui'
+    reason: Created
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-c8crv
+      namespace: ui
+      resourceVersion: "1080921"
+      uid: e6f53221-5520-467e-afa2-46cb2c77b186
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-c8crv.18dfa639ed2f6aae
+      namespace: ui
+    note: Started container ui
+    reason: Started
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-c8crv
+      namespace: ui
+      resourceVersion: "1080921"
+      uid: e6f53221-5520-467e-afa2-46cb2c77b186
+    reportingController: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:12:50.346957Z"
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-chmzl.18dfa5288fd2985f
+      namespace: ui
+    note: Successfully assigned ui/ui-65bdcb6c9-chmzl to ip-10-42-186-205.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-65bdcb6c9-chmzl
+      namespace: ui
+      resourceVersion: "1076240"
+      uid: 4cd93498-4b4b-41a3-9b04-b4f76f2fe9ea
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-chmzl.18dfa528b146aa79
+      namespace: ui
+    note: Pulling image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1"
+    reason: Pulling
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-chmzl
+      namespace: ui
+      resourceVersion: "1076242"
+      uid: 4cd93498-4b4b-41a3-9b04-b4f76f2fe9ea
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-chmzl.18dfa52a72ae183b
+      namespace: ui
+    note: 'Successfully pulled image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" in 7.539s (7.539s including waiting). Image size: 325209119 bytes.'
+    reason: Pulled
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-chmzl
+      namespace: ui
+      resourceVersion: "1076242"
+      uid: 4cd93498-4b4b-41a3-9b04-b4f76f2fe9ea
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-chmzl.18dfa52a75aa12c0
+      namespace: ui
+    note: 'Created container: ui'
+    reason: Created
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-chmzl
+      namespace: ui
+      resourceVersion: "1076242"
+      uid: 4cd93498-4b4b-41a3-9b04-b4f76f2fe9ea
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-chmzl.18dfa52a7bfd5214
+      namespace: ui
+    note: Started container ui
+    reason: Started
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-chmzl
+      namespace: ui
+      resourceVersion: "1076242"
+      uid: 4cd93498-4b4b-41a3-9b04-b4f76f2fe9ea
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-chmzl.18dfa52dd488ba0c
+      namespace: ui
+    note: Stopping container ui
+    reason: Killing
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-chmzl
+      namespace: ui
+      resourceVersion: "1076242"
+      uid: 4cd93498-4b4b-41a3-9b04-b4f76f2fe9ea
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:12:50.319082Z"
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-pdqcl.18dfa5288e294092
+      namespace: ui
+    note: Successfully assigned ui/ui-65bdcb6c9-pdqcl to ip-10-42-133-47.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-65bdcb6c9-pdqcl
+      namespace: ui
+      resourceVersion: "1076232"
+      uid: ec96c83e-d662-49a7-a08f-723a6af86b41
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-pdqcl.18dfa528ad8e873e
+      namespace: ui
+    note: Container image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" already present on machine
+    reason: Pulled
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-pdqcl
+      namespace: ui
+      resourceVersion: "1076234"
+      uid: ec96c83e-d662-49a7-a08f-723a6af86b41
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-pdqcl.18dfa528af730acf
+      namespace: ui
+    note: 'Created container: ui'
+    reason: Created
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-pdqcl
+      namespace: ui
+      resourceVersion: "1076234"
+      uid: ec96c83e-d662-49a7-a08f-723a6af86b41
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-pdqcl.18dfa528b3b37616
+      namespace: ui
+    note: Started container ui
+    reason: Started
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-pdqcl
+      namespace: ui
+      resourceVersion: "1076234"
+      uid: ec96c83e-d662-49a7-a08f-723a6af86b41
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-pdqcl.18dfa5c975a1f04b
+      namespace: ui
+    note: Stopping container ui
+    reason: Killing
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-pdqcl
+      namespace: ui
+      resourceVersion: "1076234"
+      uid: ec96c83e-d662-49a7-a08f-723a6af86b41
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:12:50.314596Z"
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-zx758.18dfa5288de4d29f
+      namespace: ui
+    note: Successfully assigned ui/ui-65bdcb6c9-zx758 to ip-10-42-186-205.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-65bdcb6c9-zx758
+      namespace: ui
+      resourceVersion: "1076231"
+      uid: 6eecb4c0-bb15-43cc-b6b6-3bba7774cb6e
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-zx758.18dfa528b0fe7390
+      namespace: ui
+    note: Pulling image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1"
+    reason: Pulling
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-zx758
+      namespace: ui
+      resourceVersion: "1076233"
+      uid: 6eecb4c0-bb15-43cc-b6b6-3bba7774cb6e
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-zx758.18dfa52a728d32d4
+      namespace: ui
+    note: 'Successfully pulled image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" in 7.542s (7.542s including waiting). Image size: 325209119 bytes.'
+    reason: Pulled
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-zx758
+      namespace: ui
+      resourceVersion: "1076233"
+      uid: 6eecb4c0-bb15-43cc-b6b6-3bba7774cb6e
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-zx758.18dfa52a74ccb6cc
+      namespace: ui
+    note: 'Created container: ui'
+    reason: Created
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-zx758
+      namespace: ui
+      resourceVersion: "1076233"
+      uid: 6eecb4c0-bb15-43cc-b6b6-3bba7774cb6e
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:58Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-zx758.18dfa52a7b954b83
+      namespace: ui
+    note: Started container ui
+    reason: Started
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-zx758
+      namespace: ui
+      resourceVersion: "1076233"
+      uid: 6eecb4c0-bb15-43cc-b6b6-3bba7774cb6e
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9-zx758.18dfa52dd43e5771
+      namespace: ui
+    note: Stopping container ui
+    reason: Killing
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-zx758
+      namespace: ui
+      resourceVersion: "1076233"
+      uid: 6eecb4c0-bb15-43cc-b6b6-3bba7774cb6e
+    reportingController: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa5288c43ab7c
+      namespace: ui
+    note: 'Created pod: ui-65bdcb6c9-4kbmm'
+    reason: SuccessfulCreate
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1076223"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa5288d86c2ca
+      namespace: ui
+    note: 'Created pod: ui-65bdcb6c9-zx758'
+    reason: SuccessfulCreate
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1076223"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa5288e21a2d0
+      namespace: ui
+    note: 'Created pod: ui-65bdcb6c9-pdqcl'
+    reason: SuccessfulCreate
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1076223"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa5288f6cab07
+      namespace: ui
+    note: 'Created pod: ui-65bdcb6c9-chmzl'
+    reason: SuccessfulCreate
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1076223"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa52dd455fba5
+      namespace: ui
+    note: 'Deleted pod: ui-65bdcb6c9-zx758'
+    reason: SuccessfulDelete
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1076363"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa52dd4b99f9d
+      namespace: ui
+    note: 'Deleted pod: ui-65bdcb6c9-chmzl'
+    reason: SuccessfulDelete
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1076363"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa5c975ce3246
+      namespace: ui
+    note: 'Deleted pod: ui-65bdcb6c9-59xrq'
+    reason: SuccessfulDelete
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1078971"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa5c975ce93bd
+      namespace: ui
+    note: 'Deleted pod: ui-65bdcb6c9-pdqcl'
+    reason: SuccessfulDelete
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1078971"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:22Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:22Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa5c9c5c1d953
+      namespace: ui
+    note: 'Deleted pod: ui-65bdcb6c9-4kbmm'
+    reason: SuccessfulDelete
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1079008"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedSource:
+      component: replicaset-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-65bdcb6c9.18dfa639c6b1d11b
+      namespace: ui
+    note: 'Created pod: ui-65bdcb6c9-c8crv'
+    reason: SuccessfulCreate
+    regarding:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1080914"
+      uid: 33326190-b475-42c1-b2f2-3c0b9f22d307
+    reportingController: replicaset-controller
+    type: Normal
+  - action: Binding
+    apiVersion: events.k8s.io/v1
+    deprecatedFirstTimestamp: null
+    deprecatedLastTimestamp: null
+    deprecatedSource: {}
+    eventTime: "2026-10-18T14:32:57.409713Z"
+    kind: Event
+    metadata:
+      name: ui-pod.18dfa6419a5e8ee9
+      namespace: ui
+    note: Successfully assigned ui/ui-pod to ip-10-42-133-47.us-east-2.compute.internal
+    reason: Scheduled
+    regarding:
+      apiVersion: v1
+      kind: Pod
+      name: ui-pod
+      namespace: ui
+      resourceVersion: "1081070"
+      uid: f2b7103b-1bc8-4349-8838-39b7d3307e6d
+    reportingController: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:57Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:57Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-pod.18dfa641bb3616fa
+      namespace: ui
+    note: Pulling image "public.ecr.aws/aws-containers/retail-store-sample-ui:0.4.0"
+    reason: Pulling
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-pod
+      namespace: ui
+      resourceVersion: "1081071"
+      uid: f2b7103b-1bc8-4349-8838-39b7d3307e6d
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:33:04Z"
+    deprecatedLastTimestamp: "2026-10-18T14:33:04Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-pod.18dfa6435b2a2afd
+      namespace: ui
+    note: 'Successfully pulled image "public.ecr.aws/aws-containers/retail-store-sample-ui:0.4.0" in 6.978s (6.978s including waiting). Image size: 268446564 bytes.'
+    reason: Pulled
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-pod
+      namespace: ui
+      resourceVersion: "1081071"
+      uid: f2b7103b-1bc8-4349-8838-39b7d3307e6d
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:33:04Z"
+    deprecatedLastTimestamp: "2026-10-18T14:33:04Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-pod.18dfa6435c89490c
+      namespace: ui
+    note: 'Created container: ui'
+    reason: Created
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-pod
+      namespace: ui
+      resourceVersion: "1081071"
+      uid: f2b7103b-1bc8-4349-8838-39b7d3307e6d
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:33:05Z"
+    deprecatedLastTimestamp: "2026-10-18T14:33:05Z"
+    deprecatedSource:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui-pod.18dfa643619bac73
+      namespace: ui
+    note: Started container ui
+    reason: Started
+    regarding:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-pod
+      namespace: ui
+      resourceVersion: "1081071"
+      uid: f2b7103b-1bc8-4349-8838-39b7d3307e6d
+    reportingController: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 2
+    deprecatedFirstTimestamp: "2026-10-18T13:16:47Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa21998298613
+      namespace: ui
+    note: Scaled up replica set ui-65bdcb6c9 from 0 to 1
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1080904"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedLastTimestamp: "2026-10-18T14:12:50Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa528892d9fbe
+      namespace: ui
+    note: Scaled up replica set ui-65bdcb6c9 from 1 to 5
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1076222"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:12Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa52dd3686e22
+      namespace: ui
+    note: Scaled down replica set ui-65bdcb6c9 from 5 to 3
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1076362"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:13:40Z"
+    deprecatedLastTimestamp: "2026-10-18T14:13:40Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa53446d0b4cb
+      namespace: ui
+    note: Scaled up replica set ui-58474649bf from 0 to 1
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1076478"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:14:09Z"
+    deprecatedLastTimestamp: "2026-10-18T14:14:09Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa53ae78430f5
+      namespace: ui
+    note: Scaled down replica set ui-58474649bf from 1 to 0
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1076602"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa5c974ced35b
+      namespace: ui
+    note: Scaled down replica set ui-65bdcb6c9 from 3 to 1
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1078970"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:21Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa5c9777f746a
+      namespace: ui
+    note: Scaled up replica set ui-595d9d568f from 0 to 1
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1078973"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:24:22Z"
+    deprecatedLastTimestamp: "2026-10-18T14:24:22Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa5c9c4e70e8b
+      namespace: ui
+    note: Scaled down replica set ui-65bdcb6c9 from 1 to 0
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1078995"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedLastTimestamp: "2026-10-18T14:27:25Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa5f4418d2c35
+      namespace: ui
+    note: Scaled up replica set ui-595d9d568f from 1 to 3
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1079740"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:23Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa639c0c5b4e7
+      namespace: ui
+    note: Scaled down replica set ui-595d9d568f from 3 to 1
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1080902"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+  - apiVersion: events.k8s.io/v1
+    deprecatedCount: 1
+    deprecatedFirstTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedLastTimestamp: "2026-10-18T14:32:24Z"
+    deprecatedSource:
+      component: deployment-controller
+    eventTime: null
+    kind: Event
+    metadata:
+      name: ui.18dfa639f3d2f590
+      namespace: ui
+    note: Scaled down replica set ui-595d9d568f from 1 to 0
+    reason: ScalingReplicaSet
+    regarding:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1080928"
+      uid: 22d1cfb1-08a3-4671-84c0-9e25be99e134
+    reportingController: deployment-controller
+    type: Normal
+kind: List
+metadata:
+  resourceVersion: ""

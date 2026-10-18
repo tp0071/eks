@@ -1,0 +1,59 @@
+apiVersion: v1
+items:
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      annotations: {}
+      labels:
+        app.kubernetes.io/created-by: eks-workshop
+      name: catalog
+      namespace: catalog
+    spec:
+      clusterIP: 172.16.95.70
+      clusterIPs:
+        - 172.16.95.70
+      internalTrafficPolicy: Cluster
+      ipFamilies:
+        - IPv4
+      ipFamilyPolicy: SingleStack
+      ports:
+        - name: http
+          port: 80
+          protocol: TCP
+          targetPort: http
+      selector:
+        app.kubernetes.io/component: service
+        app.kubernetes.io/instance: catalog
+        app.kubernetes.io/name: catalog
+      sessionAffinity: None
+      type: ClusterIP
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      annotations: {}
+      labels:
+        app.kubernetes.io/created-by: eks-workshop
+      name: catalog-mysql
+      namespace: catalog
+    spec:
+      clusterIP: 172.16.58.187
+      clusterIPs:
+        - 172.16.58.187
+      internalTrafficPolicy: Cluster
+      ipFamilies:
+        - IPv4
+      ipFamilyPolicy: SingleStack
+      ports:
+        - name: mysql
+          port: 3306
+          protocol: TCP
+          targetPort: mysql
+      selector:
+        app.kubernetes.io/component: mysql
+        app.kubernetes.io/instance: catalog
+        app.kubernetes.io/name: catalog
+      sessionAffinity: None
+      type: ClusterIP
+kind: List
+metadata:
+  resourceVersion: ""

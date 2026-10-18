@@ -1,0 +1,29 @@
+apiVersion: v1
+items:
+  - apiVersion: v1
+    kind: Endpoints
+    metadata:
+      labels:
+        app.kubernetes.io/component: service
+        app.kubernetes.io/created-by: eks-workshop
+        app.kubernetes.io/instance: ui
+        app.kubernetes.io/name: ui
+        endpoints.kubernetes.io/managed-by: endpoint-controller
+      name: ui
+      namespace: ui
+    subsets:
+      - addresses:
+          - ip: 10.42.113.193
+            nodeName: ip-10-42-108-77.us-east-2.compute.internal
+            targetRef:
+              kind: Pod
+              name: ui-65bdcb6c9-c8crv
+              namespace: ui
+              uid: e6f53221-5520-467e-afa2-46cb2c77b186
+        ports:
+          - name: http
+            port: 8080
+            protocol: TCP
+kind: List
+metadata:
+  resourceVersion: ""

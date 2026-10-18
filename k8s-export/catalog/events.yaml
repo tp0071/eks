@@ -1,0 +1,5147 @@
+apiVersion: v1
+items:
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:15:10.778748Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-7bc7d5c444-rzh7h
+      namespace: catalog
+      resourceVersion: "1076846"
+      uid: 939e27b2-53e9-4bd0-9d05-02c1bf6c87ea
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-7bc7d5c444-rzh7h to ip-10-42-186-205.us-east-2.compute.internal
+    metadata:
+      name: catalog-7bc7d5c444-rzh7h.18dfa5494235c3cd
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:11Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-rzh7h
+      namespace: catalog
+      resourceVersion: "1076847"
+      uid: 939e27b2-53e9-4bd0-9d05-02c1bf6c87ea
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:11Z"
+    message: Pulling image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1"
+    metadata:
+      name: catalog-7bc7d5c444-rzh7h.18dfa5496470e701
+      namespace: catalog
+    reason: Pulling
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:13Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-rzh7h
+      namespace: catalog
+      resourceVersion: "1076847"
+      uid: 939e27b2-53e9-4bd0-9d05-02c1bf6c87ea
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:13Z"
+    message: 'Successfully pulled image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1" in 2.59s (2.59s including waiting). Image size: 75471480 bytes.'
+    metadata:
+      name: catalog-7bc7d5c444-rzh7h.18dfa549feddd769
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 4
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:13Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-rzh7h
+      namespace: catalog
+      resourceVersion: "1076847"
+      uid: 939e27b2-53e9-4bd0-9d05-02c1bf6c87ea
+    kind: Event
+    lastTimestamp: "2026-10-18T14:16:06Z"
+    message: 'Created container: catalog'
+    metadata:
+      name: catalog-7bc7d5c444-rzh7h.18dfa54a011124a3
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 4
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:14Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-rzh7h
+      namespace: catalog
+      resourceVersion: "1076847"
+      uid: 939e27b2-53e9-4bd0-9d05-02c1bf6c87ea
+    kind: Event
+    lastTimestamp: "2026-10-18T14:16:06Z"
+    message: Started container catalog
+    metadata:
+      name: catalog-7bc7d5c444-rzh7h.18dfa54a0667333b
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:14Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-rzh7h
+      namespace: catalog
+      resourceVersion: "1076847"
+      uid: 939e27b2-53e9-4bd0-9d05-02c1bf6c87ea
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:14Z"
+    message: 'Readiness probe failed: Get "http://10.42.184.162:8080/health": dial tcp 10.42.184.162:8080: connect: connection refused'
+    metadata:
+      name: catalog-7bc7d5c444-rzh7h.18dfa54a13b737cf
+      namespace: catalog
+    reason: Unhealthy
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Warning
+  - apiVersion: v1
+    count: 3
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:15Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-rzh7h
+      namespace: catalog
+      resourceVersion: "1076847"
+      uid: 939e27b2-53e9-4bd0-9d05-02c1bf6c87ea
+    kind: Event
+    lastTimestamp: "2026-10-18T14:16:06Z"
+    message: Container image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1" already present on machine
+    metadata:
+      name: catalog-7bc7d5c444-rzh7h.18dfa54a4f8fa60e
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 8
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:16Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-rzh7h
+      namespace: catalog
+      resourceVersion: "1076847"
+      uid: 939e27b2-53e9-4bd0-9d05-02c1bf6c87ea
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:52Z"
+    message: Back-off restarting failed container catalog in pod catalog-7bc7d5c444-rzh7h_catalog(939e27b2-53e9-4bd0-9d05-02c1bf6c87ea)
+    metadata:
+      name: catalog-7bc7d5c444-rzh7h.18dfa54a8b734f82
+      namespace: catalog
+    reason: BackOff
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Warning
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:10Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: catalog-7bc7d5c444
+      namespace: catalog
+      resourceVersion: "1076841"
+      uid: ee4ebff1-84bf-4041-9880-3831cfdb0153
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:10Z"
+    message: 'Created pod: catalog-7bc7d5c444-rzh7h'
+    metadata:
+      name: catalog-7bc7d5c444.18dfa549420aa264
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: replicaset-controller
+    reportingInstance: ""
+    source:
+      component: replicaset-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:22:00.221910Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872222-ffvs8
+      namespace: catalog
+      resourceVersion: "1078424"
+      uid: a8541feb-aa9e-45ed-90bc-0f90e1d3c316
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872222-ffvs8 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872222-ffvs8.18dfa5a896ec8d38
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:22:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872222-ffvs8
+      namespace: catalog
+      resourceVersion: "1078427"
+      uid: a8541feb-aa9e-45ed-90bc-0f90e1d3c316
+    kind: Event
+    lastTimestamp: "2026-10-18T14:22:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872222-ffvs8.18dfa5a8bac299b1
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:22:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872222-ffvs8
+      namespace: catalog
+      resourceVersion: "1078427"
+      uid: a8541feb-aa9e-45ed-90bc-0f90e1d3c316
+    kind: Event
+    lastTimestamp: "2026-10-18T14:22:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872222-ffvs8.18dfa5a8bc187c48
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:22:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872222-ffvs8
+      namespace: catalog
+      resourceVersion: "1078427"
+      uid: a8541feb-aa9e-45ed-90bc-0f90e1d3c316
+    kind: Event
+    lastTimestamp: "2026-10-18T14:22:00Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872222-ffvs8.18dfa5a8c1b8d3a7
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:22:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872222
+      namespace: catalog
+      resourceVersion: "1078421"
+      uid: 51399bd1-9d9f-432d-a89a-2222e963cb20
+    kind: Event
+    lastTimestamp: "2026-10-18T14:22:00Z"
+    message: 'Created pod: catalog-cleanup-29872222-ffvs8'
+    metadata:
+      name: catalog-cleanup-29872222.18dfa5a89405dfea
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:22:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872222
+      namespace: catalog
+      resourceVersion: "1078470"
+      uid: 51399bd1-9d9f-432d-a89a-2222e963cb20
+    kind: Event
+    lastTimestamp: "2026-10-18T14:22:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872222.18dfa5aa853e3218
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:23:00.249135Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872223-9dp5v
+      namespace: catalog
+      resourceVersion: "1078652"
+      uid: f79b6dbd-0429-4e24-b40d-94e4c9f3a5c1
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872223-9dp5v to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872223-9dp5v.18dfa5b690d33ee2
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:23:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872223-9dp5v
+      namespace: catalog
+      resourceVersion: "1078655"
+      uid: f79b6dbd-0429-4e24-b40d-94e4c9f3a5c1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:23:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872223-9dp5v.18dfa5b6b9012b45
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:23:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872223-9dp5v
+      namespace: catalog
+      resourceVersion: "1078655"
+      uid: f79b6dbd-0429-4e24-b40d-94e4c9f3a5c1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:23:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872223-9dp5v.18dfa5b6ba53ab7f
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:23:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872223-9dp5v
+      namespace: catalog
+      resourceVersion: "1078655"
+      uid: f79b6dbd-0429-4e24-b40d-94e4c9f3a5c1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:23:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872223-9dp5v.18dfa5b6bfe52e30
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:23:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872223
+      namespace: catalog
+      resourceVersion: "1078649"
+      uid: bc7f68bd-22de-48f5-b8c8-1b43015efd61
+    kind: Event
+    lastTimestamp: "2026-10-18T14:23:00Z"
+    message: 'Created pod: catalog-cleanup-29872223-9dp5v'
+    metadata:
+      name: catalog-cleanup-29872223.18dfa5b68f53b483
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:23:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872223
+      namespace: catalog
+      resourceVersion: "1078696"
+      uid: bc7f68bd-22de-48f5-b8c8-1b43015efd61
+    kind: Event
+    lastTimestamp: "2026-10-18T14:23:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872223.18dfa5b88426fc85
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:24:00.193929Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872224-wp7np
+      namespace: catalog
+      resourceVersion: "1078879"
+      uid: 22e169ec-7fe4-4bfe-879f-4514b56ed800
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872224-wp7np to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872224-wp7np.18dfa5c485d036c8
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:24:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872224-wp7np
+      namespace: catalog
+      resourceVersion: "1078882"
+      uid: 22e169ec-7fe4-4bfe-879f-4514b56ed800
+    kind: Event
+    lastTimestamp: "2026-10-18T14:24:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872224-wp7np.18dfa5c4ab3cc1db
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:24:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872224-wp7np
+      namespace: catalog
+      resourceVersion: "1078882"
+      uid: 22e169ec-7fe4-4bfe-879f-4514b56ed800
+    kind: Event
+    lastTimestamp: "2026-10-18T14:24:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872224-wp7np.18dfa5c4ac853c82
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:24:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872224-wp7np
+      namespace: catalog
+      resourceVersion: "1078882"
+      uid: 22e169ec-7fe4-4bfe-879f-4514b56ed800
+    kind: Event
+    lastTimestamp: "2026-10-18T14:24:00Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872224-wp7np.18dfa5c4b22dc53d
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:24:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872224
+      namespace: catalog
+      resourceVersion: "1078876"
+      uid: 3a7d9989-c9f8-4497-9c6d-1c4ff17377c8
+    kind: Event
+    lastTimestamp: "2026-10-18T14:24:00Z"
+    message: 'Created pod: catalog-cleanup-29872224-wp7np'
+    metadata:
+      name: catalog-cleanup-29872224.18dfa5c4842a0026
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:24:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872224
+      namespace: catalog
+      resourceVersion: "1078922"
+      uid: 3a7d9989-c9f8-4497-9c6d-1c4ff17377c8
+    kind: Event
+    lastTimestamp: "2026-10-18T14:24:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872224.18dfa5c683d269c5
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:25:00.189485Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872225-jzbkz
+      namespace: catalog
+      resourceVersion: "1079161"
+      uid: 790ed9c1-86ac-4c60-9f6c-ca3b4538c510
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872225-jzbkz to ip-10-42-133-47.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872225-jzbkz.18dfa5d27dd3d002
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:25:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872225-jzbkz
+      namespace: catalog
+      resourceVersion: "1079164"
+      uid: 790ed9c1-86ac-4c60-9f6c-ca3b4538c510
+    kind: Event
+    lastTimestamp: "2026-10-18T14:25:00Z"
+    message: Pulling image "busybox:1.36"
+    metadata:
+      name: catalog-cleanup-29872225-jzbkz.18dfa5d2a5f05839
+      namespace: catalog
+    reason: Pulling
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:25:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872225-jzbkz
+      namespace: catalog
+      resourceVersion: "1079164"
+      uid: 790ed9c1-86ac-4c60-9f6c-ca3b4538c510
+    kind: Event
+    lastTimestamp: "2026-10-18T14:25:01Z"
+    message: 'Successfully pulled image "busybox:1.36" in 666ms (666ms including waiting). Image size: 2217006 bytes.'
+    metadata:
+      name: catalog-cleanup-29872225-jzbkz.18dfa5d2cdb1dd14
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:25:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872225-jzbkz
+      namespace: catalog
+      resourceVersion: "1079164"
+      uid: 790ed9c1-86ac-4c60-9f6c-ca3b4538c510
+    kind: Event
+    lastTimestamp: "2026-10-18T14:25:01Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872225-jzbkz.18dfa5d2cf130331
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:25:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872225-jzbkz
+      namespace: catalog
+      resourceVersion: "1079164"
+      uid: 790ed9c1-86ac-4c60-9f6c-ca3b4538c510
+    kind: Event
+    lastTimestamp: "2026-10-18T14:25:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872225-jzbkz.18dfa5d2d389ecdd
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:25:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872225
+      namespace: catalog
+      resourceVersion: "1079158"
+      uid: 7d08a585-36b7-4abf-9198-a0f5d8da0ab5
+    kind: Event
+    lastTimestamp: "2026-10-18T14:25:00Z"
+    message: 'Created pod: catalog-cleanup-29872225-jzbkz'
+    metadata:
+      name: catalog-cleanup-29872225.18dfa5d27bf0005a
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:25:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872225
+      namespace: catalog
+      resourceVersion: "1079207"
+      uid: 7d08a585-36b7-4abf-9198-a0f5d8da0ab5
+    kind: Event
+    lastTimestamp: "2026-10-18T14:25:09Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872225.18dfa5d49793ff94
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:26:00.285144Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872226-vll4w
+      namespace: catalog
+      resourceVersion: "1079391"
+      uid: 9ea448c9-9e3e-4811-8230-04a3fb761741
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872226-vll4w to ip-10-42-133-47.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872226-vll4w.18dfa5e07bced7bf
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:26:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872226-vll4w
+      namespace: catalog
+      resourceVersion: "1079394"
+      uid: 9ea448c9-9e3e-4811-8230-04a3fb761741
+    kind: Event
+    lastTimestamp: "2026-10-18T14:26:01Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872226-vll4w.18dfa5e0afb6259b
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:26:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872226-vll4w
+      namespace: catalog
+      resourceVersion: "1079394"
+      uid: 9ea448c9-9e3e-4811-8230-04a3fb761741
+    kind: Event
+    lastTimestamp: "2026-10-18T14:26:01Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872226-vll4w.18dfa5e0b5399cf9
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:26:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872226-vll4w
+      namespace: catalog
+      resourceVersion: "1079394"
+      uid: 9ea448c9-9e3e-4811-8230-04a3fb761741
+    kind: Event
+    lastTimestamp: "2026-10-18T14:26:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872226-vll4w.18dfa5e0bb857064
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:26:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872226
+      namespace: catalog
+      resourceVersion: "1079388"
+      uid: 7e94d27a-ae59-48e2-ba3d-7d089e91757e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:26:00Z"
+    message: 'Created pod: catalog-cleanup-29872226-vll4w'
+    metadata:
+      name: catalog-cleanup-29872226.18dfa5e074f7612f
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:26:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872226
+      namespace: catalog
+      resourceVersion: "1079434"
+      uid: 7e94d27a-ae59-48e2-ba3d-7d089e91757e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:26:09Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872226.18dfa5e295443045
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:27:00.250441Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872227-qh687
+      namespace: catalog
+      resourceVersion: "1079630"
+      uid: dec7c5c2-f185-4058-9447-574f5f0922aa
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872227-qh687 to ip-10-42-133-47.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872227-qh687.18dfa5ee72049226
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:27:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872227-qh687
+      namespace: catalog
+      resourceVersion: "1079633"
+      uid: dec7c5c2-f185-4058-9447-574f5f0922aa
+    kind: Event
+    lastTimestamp: "2026-10-18T14:27:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872227-qh687.18dfa5ee96758f75
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:27:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872227-qh687
+      namespace: catalog
+      resourceVersion: "1079633"
+      uid: dec7c5c2-f185-4058-9447-574f5f0922aa
+    kind: Event
+    lastTimestamp: "2026-10-18T14:27:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872227-qh687.18dfa5ee97bb380d
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:27:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872227-qh687
+      namespace: catalog
+      resourceVersion: "1079633"
+      uid: dec7c5c2-f185-4058-9447-574f5f0922aa
+    kind: Event
+    lastTimestamp: "2026-10-18T14:27:00Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872227-qh687.18dfa5ee9ca8cc9d
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:27:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872227
+      namespace: catalog
+      resourceVersion: "1079627"
+      uid: b3bab9d6-5d59-4211-a323-6e83e98a6f2a
+    kind: Event
+    lastTimestamp: "2026-10-18T14:27:00Z"
+    message: 'Created pod: catalog-cleanup-29872227-qh687'
+    metadata:
+      name: catalog-cleanup-29872227.18dfa5ee6d875584
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:27:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872227
+      namespace: catalog
+      resourceVersion: "1079672"
+      uid: b3bab9d6-5d59-4211-a323-6e83e98a6f2a
+    kind: Event
+    lastTimestamp: "2026-10-18T14:27:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872227.18dfa5f0590838bc
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:28:00.201028Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872228-zwvnb
+      namespace: catalog
+      resourceVersion: "1079892"
+      uid: 12b6a43d-56f7-4fb6-b140-9923a4cc5d2a
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872228-zwvnb to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872228-zwvnb.18dfa5fc6759f3bc
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:28:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872228-zwvnb
+      namespace: catalog
+      resourceVersion: "1079896"
+      uid: 12b6a43d-56f7-4fb6-b140-9923a4cc5d2a
+    kind: Event
+    lastTimestamp: "2026-10-18T14:28:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872228-zwvnb.18dfa5fc8c67c2ea
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:28:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872228-zwvnb
+      namespace: catalog
+      resourceVersion: "1079896"
+      uid: 12b6a43d-56f7-4fb6-b140-9923a4cc5d2a
+    kind: Event
+    lastTimestamp: "2026-10-18T14:28:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872228-zwvnb.18dfa5fc8da0e026
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:28:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872228-zwvnb
+      namespace: catalog
+      resourceVersion: "1079896"
+      uid: 12b6a43d-56f7-4fb6-b140-9923a4cc5d2a
+    kind: Event
+    lastTimestamp: "2026-10-18T14:28:00Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872228-zwvnb.18dfa5fc92b39a9b
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:28:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872228
+      namespace: catalog
+      resourceVersion: "1079889"
+      uid: f90164dd-5747-4fb1-ad27-61a95f38b83e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:28:00Z"
+    message: 'Created pod: catalog-cleanup-29872228-zwvnb'
+    metadata:
+      name: catalog-cleanup-29872228.18dfa5fc65cc7a6a
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:28:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872228
+      namespace: catalog
+      resourceVersion: "1079935"
+      uid: f90164dd-5747-4fb1-ad27-61a95f38b83e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:28:09Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872228.18dfa5fe7b2df21f
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:29:00.270188Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872229-jbsgc
+      namespace: catalog
+      resourceVersion: "1080122"
+      uid: 05267d22-20f1-4a52-9e88-181be022a5d0
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872229-jbsgc to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872229-jbsgc.18dfa60a63c09200
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:29:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872229-jbsgc
+      namespace: catalog
+      resourceVersion: "1080125"
+      uid: 05267d22-20f1-4a52-9e88-181be022a5d0
+    kind: Event
+    lastTimestamp: "2026-10-18T14:29:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872229-jbsgc.18dfa60a8aa7e979
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:29:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872229-jbsgc
+      namespace: catalog
+      resourceVersion: "1080125"
+      uid: 05267d22-20f1-4a52-9e88-181be022a5d0
+    kind: Event
+    lastTimestamp: "2026-10-18T14:29:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872229-jbsgc.18dfa60a8bdeae6c
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:29:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872229-jbsgc
+      namespace: catalog
+      resourceVersion: "1080125"
+      uid: 05267d22-20f1-4a52-9e88-181be022a5d0
+    kind: Event
+    lastTimestamp: "2026-10-18T14:29:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872229-jbsgc.18dfa60a95a03277
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:29:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872229
+      namespace: catalog
+      resourceVersion: "1080119"
+      uid: eff6cdc9-cc1c-48c1-85d5-e65df5a9173d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:29:00Z"
+    message: 'Created pod: catalog-cleanup-29872229-jbsgc'
+    metadata:
+      name: catalog-cleanup-29872229.18dfa60a5d23b3ce
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:29:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872229
+      namespace: catalog
+      resourceVersion: "1080164"
+      uid: eff6cdc9-cc1c-48c1-85d5-e65df5a9173d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:29:09Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872229.18dfa60c79d75748
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:30:00.190590Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872230-rjdg2
+      namespace: catalog
+      resourceVersion: "1080348"
+      uid: 483cf9c7-272e-4909-829e-ea8237a082b1
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872230-rjdg2 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872230-rjdg2.18dfa61857496794
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:30:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872230-rjdg2
+      namespace: catalog
+      resourceVersion: "1080352"
+      uid: 483cf9c7-272e-4909-829e-ea8237a082b1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:30:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872230-rjdg2.18dfa6187ce55428
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:30:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872230-rjdg2
+      namespace: catalog
+      resourceVersion: "1080352"
+      uid: 483cf9c7-272e-4909-829e-ea8237a082b1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:30:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872230-rjdg2.18dfa6187e0d3c47
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:30:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872230-rjdg2
+      namespace: catalog
+      resourceVersion: "1080352"
+      uid: 483cf9c7-272e-4909-829e-ea8237a082b1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:30:00Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872230-rjdg2.18dfa61883396254
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:30:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872230
+      namespace: catalog
+      resourceVersion: "1080345"
+      uid: 8dad8dc5-193f-4c96-9ec1-bdc7fcf37c34
+    kind: Event
+    lastTimestamp: "2026-10-18T14:30:00Z"
+    message: 'Created pod: catalog-cleanup-29872230-rjdg2'
+    metadata:
+      name: catalog-cleanup-29872230.18dfa61854504663
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:30:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872230
+      namespace: catalog
+      resourceVersion: "1080389"
+      uid: 8dad8dc5-193f-4c96-9ec1-bdc7fcf37c34
+    kind: Event
+    lastTimestamp: "2026-10-18T14:30:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872230.18dfa61a3c02aa6e
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:31:00.288775Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872231-ckjnx
+      namespace: catalog
+      resourceVersion: "1080574"
+      uid: e9483a71-25ca-4c5f-bbbc-4d48f00a0cc9
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872231-ckjnx to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872231-ckjnx.18dfa626556aeb6b
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:31:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872231-ckjnx
+      namespace: catalog
+      resourceVersion: "1080578"
+      uid: e9483a71-25ca-4c5f-bbbc-4d48f00a0cc9
+    kind: Event
+    lastTimestamp: "2026-10-18T14:31:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872231-ckjnx.18dfa6267ae4ff6b
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:31:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872231-ckjnx
+      namespace: catalog
+      resourceVersion: "1080578"
+      uid: e9483a71-25ca-4c5f-bbbc-4d48f00a0cc9
+    kind: Event
+    lastTimestamp: "2026-10-18T14:31:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872231-ckjnx.18dfa6267c12faf3
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:31:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872231-ckjnx
+      namespace: catalog
+      resourceVersion: "1080578"
+      uid: e9483a71-25ca-4c5f-bbbc-4d48f00a0cc9
+    kind: Event
+    lastTimestamp: "2026-10-18T14:31:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872231-ckjnx.18dfa626822c4d2d
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:31:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872231
+      namespace: catalog
+      resourceVersion: "1080572"
+      uid: ad9a51b8-be5a-4774-a50d-2a3c52bc6a4d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:31:00Z"
+    message: 'Created pod: catalog-cleanup-29872231-ckjnx'
+    metadata:
+      name: catalog-cleanup-29872231.18dfa6264dee6b55
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:31:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872231
+      namespace: catalog
+      resourceVersion: "1080617"
+      uid: ad9a51b8-be5a-4774-a50d-2a3c52bc6a4d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:31:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872231.18dfa6283c09aa41
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:32:00.196579Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872232-44xj4
+      namespace: catalog
+      resourceVersion: "1080801"
+      uid: af736f97-8ee2-4c72-9f57-4df517cc64a6
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872232-44xj4 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872232-44xj4.18dfa63448336539
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:32:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872232-44xj4
+      namespace: catalog
+      resourceVersion: "1080804"
+      uid: af736f97-8ee2-4c72-9f57-4df517cc64a6
+    kind: Event
+    lastTimestamp: "2026-10-18T14:32:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872232-44xj4.18dfa6346d37ac86
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:32:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872232-44xj4
+      namespace: catalog
+      resourceVersion: "1080804"
+      uid: af736f97-8ee2-4c72-9f57-4df517cc64a6
+    kind: Event
+    lastTimestamp: "2026-10-18T14:32:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872232-44xj4.18dfa63472c4e157
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:32:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872232-44xj4
+      namespace: catalog
+      resourceVersion: "1080804"
+      uid: af736f97-8ee2-4c72-9f57-4df517cc64a6
+    kind: Event
+    lastTimestamp: "2026-10-18T14:32:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872232-44xj4.18dfa63479087e3b
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:32:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872232
+      namespace: catalog
+      resourceVersion: "1080799"
+      uid: 87676017-f8b1-460b-96c2-f8383202b7a7
+    kind: Event
+    lastTimestamp: "2026-10-18T14:32:00Z"
+    message: 'Created pod: catalog-cleanup-29872232-44xj4'
+    metadata:
+      name: catalog-cleanup-29872232.18dfa634463288dc
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:32:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872232
+      namespace: catalog
+      resourceVersion: "1080843"
+      uid: 87676017-f8b1-460b-96c2-f8383202b7a7
+    kind: Event
+    lastTimestamp: "2026-10-18T14:32:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872232.18dfa63639f33551
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:33:00.162778Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872233-wbjj6
+      namespace: catalog
+      resourceVersion: "1081091"
+      uid: 91a5237a-bdb8-4536-9676-b812b186701c
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872233-wbjj6 to ip-10-42-133-47.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872233-wbjj6.18dfa6423e770ff5
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:33:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872233-wbjj6
+      namespace: catalog
+      resourceVersion: "1081094"
+      uid: 91a5237a-bdb8-4536-9676-b812b186701c
+    kind: Event
+    lastTimestamp: "2026-10-18T14:33:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872233-wbjj6.18dfa6426e8018a2
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:33:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872233-wbjj6
+      namespace: catalog
+      resourceVersion: "1081094"
+      uid: 91a5237a-bdb8-4536-9676-b812b186701c
+    kind: Event
+    lastTimestamp: "2026-10-18T14:33:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872233-wbjj6.18dfa6427057d8f9
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:33:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872233-wbjj6
+      namespace: catalog
+      resourceVersion: "1081094"
+      uid: 91a5237a-bdb8-4536-9676-b812b186701c
+    kind: Event
+    lastTimestamp: "2026-10-18T14:33:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872233-wbjj6.18dfa6427a931523
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:33:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872233
+      namespace: catalog
+      resourceVersion: "1081089"
+      uid: 2147bb3f-7512-4233-9596-f17a78ad64df
+    kind: Event
+    lastTimestamp: "2026-10-18T14:33:00Z"
+    message: 'Created pod: catalog-cleanup-29872233-wbjj6'
+    metadata:
+      name: catalog-cleanup-29872233.18dfa6423d3aa95a
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:33:12Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872233
+      namespace: catalog
+      resourceVersion: "1081148"
+      uid: 2147bb3f-7512-4233-9596-f17a78ad64df
+    kind: Event
+    lastTimestamp: "2026-10-18T14:33:12Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872233.18dfa6450139e382
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:34:00.214461Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872234-s7dk8
+      namespace: catalog
+      resourceVersion: "1081321"
+      uid: af548ff2-5d91-4a6d-8ea6-fcdb87f1d496
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872234-s7dk8 to ip-10-42-133-47.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872234-s7dk8.18dfa65039d2f1a5
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:34:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872234-s7dk8
+      namespace: catalog
+      resourceVersion: "1081325"
+      uid: af548ff2-5d91-4a6d-8ea6-fcdb87f1d496
+    kind: Event
+    lastTimestamp: "2026-10-18T14:34:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872234-s7dk8.18dfa650661f1ac8
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:34:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872234-s7dk8
+      namespace: catalog
+      resourceVersion: "1081325"
+      uid: af548ff2-5d91-4a6d-8ea6-fcdb87f1d496
+    kind: Event
+    lastTimestamp: "2026-10-18T14:34:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872234-s7dk8.18dfa6506759987b
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:34:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872234-s7dk8
+      namespace: catalog
+      resourceVersion: "1081325"
+      uid: af548ff2-5d91-4a6d-8ea6-fcdb87f1d496
+    kind: Event
+    lastTimestamp: "2026-10-18T14:34:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872234-s7dk8.18dfa6506d1150da
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:34:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872234
+      namespace: catalog
+      resourceVersion: "1081319"
+      uid: a33fd838-6e43-46ec-860c-e2a27c9a7a96
+    kind: Event
+    lastTimestamp: "2026-10-18T14:34:00Z"
+    message: 'Created pod: catalog-cleanup-29872234-s7dk8'
+    metadata:
+      name: catalog-cleanup-29872234.18dfa65035524158
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:34:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872234
+      namespace: catalog
+      resourceVersion: "1081362"
+      uid: a33fd838-6e43-46ec-860c-e2a27c9a7a96
+    kind: Event
+    lastTimestamp: "2026-10-18T14:34:09Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872234.18dfa6524cbb1fa8
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:35:00.213796Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872235-8zqgm
+      namespace: catalog
+      resourceVersion: "1081545"
+      uid: 0b17a97e-0f09-48f6-9c34-9b2467153270
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872235-8zqgm to ip-10-42-133-47.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872235-8zqgm.18dfa65e32102351
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:35:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872235-8zqgm
+      namespace: catalog
+      resourceVersion: "1081548"
+      uid: 0b17a97e-0f09-48f6-9c34-9b2467153270
+    kind: Event
+    lastTimestamp: "2026-10-18T14:35:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872235-8zqgm.18dfa65e5eafd13a
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:35:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872235-8zqgm
+      namespace: catalog
+      resourceVersion: "1081548"
+      uid: 0b17a97e-0f09-48f6-9c34-9b2467153270
+    kind: Event
+    lastTimestamp: "2026-10-18T14:35:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872235-8zqgm.18dfa65e5ff3c9b4
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:35:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872235-8zqgm
+      namespace: catalog
+      resourceVersion: "1081548"
+      uid: 0b17a97e-0f09-48f6-9c34-9b2467153270
+    kind: Event
+    lastTimestamp: "2026-10-18T14:35:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872235-8zqgm.18dfa65e64f41324
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:35:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872235
+      namespace: catalog
+      resourceVersion: "1081543"
+      uid: 2c8f71c7-c9cd-49e6-9eab-5c5d7fcd5ae3
+    kind: Event
+    lastTimestamp: "2026-10-18T14:35:00Z"
+    message: 'Created pod: catalog-cleanup-29872235-8zqgm'
+    metadata:
+      name: catalog-cleanup-29872235.18dfa65e2d994d80
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:35:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872235
+      namespace: catalog
+      resourceVersion: "1081597"
+      uid: 2c8f71c7-c9cd-49e6-9eab-5c5d7fcd5ae3
+    kind: Event
+    lastTimestamp: "2026-10-18T14:35:09Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872235.18dfa6604b3aff67
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:36:00.233948Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872236-j2p2g
+      namespace: catalog
+      resourceVersion: "1081779"
+      uid: 044f1188-b62c-473f-a726-a8d766745ae7
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872236-j2p2g to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872236-j2p2g.18dfa66c2b8b0269
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:36:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872236-j2p2g
+      namespace: catalog
+      resourceVersion: "1081782"
+      uid: 044f1188-b62c-473f-a726-a8d766745ae7
+    kind: Event
+    lastTimestamp: "2026-10-18T14:36:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872236-j2p2g.18dfa66c4e6f0ad0
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:36:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872236-j2p2g
+      namespace: catalog
+      resourceVersion: "1081782"
+      uid: 044f1188-b62c-473f-a726-a8d766745ae7
+    kind: Event
+    lastTimestamp: "2026-10-18T14:36:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872236-j2p2g.18dfa66c4fa5900e
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:36:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872236-j2p2g
+      namespace: catalog
+      resourceVersion: "1081782"
+      uid: 044f1188-b62c-473f-a726-a8d766745ae7
+    kind: Event
+    lastTimestamp: "2026-10-18T14:36:00Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872236-j2p2g.18dfa66c54e14ca5
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:36:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872236
+      namespace: catalog
+      resourceVersion: "1081777"
+      uid: b483171a-76e5-4185-86ee-5846e2debef7
+    kind: Event
+    lastTimestamp: "2026-10-18T14:36:00Z"
+    message: 'Created pod: catalog-cleanup-29872236-j2p2g'
+    metadata:
+      name: catalog-cleanup-29872236.18dfa66c2973d1dd
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:36:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872236
+      namespace: catalog
+      resourceVersion: "1081823"
+      uid: b483171a-76e5-4185-86ee-5846e2debef7
+    kind: Event
+    lastTimestamp: "2026-10-18T14:36:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872236.18dfa66e32782148
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:37:00.185288Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872237-ckvpw
+      namespace: catalog
+      resourceVersion: "1082005"
+      uid: 24a6deb0-e5d6-42e6-bb83-2e7551996780
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872237-ckvpw to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872237-ckvpw.18dfa67a20ebe7da
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:37:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872237-ckvpw
+      namespace: catalog
+      resourceVersion: "1082008"
+      uid: 24a6deb0-e5d6-42e6-bb83-2e7551996780
+    kind: Event
+    lastTimestamp: "2026-10-18T14:37:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872237-ckvpw.18dfa67a46ede0b4
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:37:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872237-ckvpw
+      namespace: catalog
+      resourceVersion: "1082008"
+      uid: 24a6deb0-e5d6-42e6-bb83-2e7551996780
+    kind: Event
+    lastTimestamp: "2026-10-18T14:37:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872237-ckvpw.18dfa67a48263070
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:37:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872237-ckvpw
+      namespace: catalog
+      resourceVersion: "1082008"
+      uid: 24a6deb0-e5d6-42e6-bb83-2e7551996780
+    kind: Event
+    lastTimestamp: "2026-10-18T14:37:00Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872237-ckvpw.18dfa67a4d07f426
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:37:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872237
+      namespace: catalog
+      resourceVersion: "1082002"
+      uid: 0a522aeb-c8f6-4cf9-93ae-055318df6376
+    kind: Event
+    lastTimestamp: "2026-10-18T14:37:00Z"
+    message: 'Created pod: catalog-cleanup-29872237-ckvpw'
+    metadata:
+      name: catalog-cleanup-29872237.18dfa67a1f61cef1
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:37:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872237
+      namespace: catalog
+      resourceVersion: "1082049"
+      uid: 0a522aeb-c8f6-4cf9-93ae-055318df6376
+    kind: Event
+    lastTimestamp: "2026-10-18T14:37:09Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872237.18dfa67c3097b351
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:38:00.269062Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872238-gqmr5
+      namespace: catalog
+      resourceVersion: "1082229"
+      uid: 3c9a6983-9e6c-451d-9a76-11c48d1f43ec
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872238-gqmr5 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872238-gqmr5.18dfa6881e317f90
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:38:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872238-gqmr5
+      namespace: catalog
+      resourceVersion: "1082232"
+      uid: 3c9a6983-9e6c-451d-9a76-11c48d1f43ec
+    kind: Event
+    lastTimestamp: "2026-10-18T14:38:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872238-gqmr5.18dfa68844c41dd8
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:38:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872238-gqmr5
+      namespace: catalog
+      resourceVersion: "1082232"
+      uid: 3c9a6983-9e6c-451d-9a76-11c48d1f43ec
+    kind: Event
+    lastTimestamp: "2026-10-18T14:38:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872238-gqmr5.18dfa688460201be
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:38:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872238-gqmr5
+      namespace: catalog
+      resourceVersion: "1082232"
+      uid: 3c9a6983-9e6c-451d-9a76-11c48d1f43ec
+    kind: Event
+    lastTimestamp: "2026-10-18T14:38:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872238-gqmr5.18dfa6884b6c2aa6
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:38:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872238
+      namespace: catalog
+      resourceVersion: "1082226"
+      uid: ffd28d8d-174d-4d44-a66b-d5a752e31ed0
+    kind: Event
+    lastTimestamp: "2026-10-18T14:38:00Z"
+    message: 'Created pod: catalog-cleanup-29872238-gqmr5'
+    metadata:
+      name: catalog-cleanup-29872238.18dfa6881a2a3726
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:38:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872238
+      namespace: catalog
+      resourceVersion: "1082277"
+      uid: ffd28d8d-174d-4d44-a66b-d5a752e31ed0
+    kind: Event
+    lastTimestamp: "2026-10-18T14:38:09Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872238.18dfa68a31bd101d
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:39:00.165788Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872239-fffcm
+      namespace: catalog
+      resourceVersion: "1082456"
+      uid: 66db8998-4a83-46f8-bb46-3ef26a071e9d
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872239-fffcm to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872239-fffcm.18dfa6961050fa2f
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:39:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872239-fffcm
+      namespace: catalog
+      resourceVersion: "1082459"
+      uid: 66db8998-4a83-46f8-bb46-3ef26a071e9d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:39:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872239-fffcm.18dfa6963772874b
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:39:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872239-fffcm
+      namespace: catalog
+      resourceVersion: "1082459"
+      uid: 66db8998-4a83-46f8-bb46-3ef26a071e9d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:39:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872239-fffcm.18dfa69638b2fda6
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:39:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872239-fffcm
+      namespace: catalog
+      resourceVersion: "1082459"
+      uid: 66db8998-4a83-46f8-bb46-3ef26a071e9d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:39:00Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872239-fffcm.18dfa6963dd2885d
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:39:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872239
+      namespace: catalog
+      resourceVersion: "1082454"
+      uid: c2f72f21-b30c-4d6a-8c44-3bff4236354b
+    kind: Event
+    lastTimestamp: "2026-10-18T14:39:00Z"
+    message: 'Created pod: catalog-cleanup-29872239-fffcm'
+    metadata:
+      name: catalog-cleanup-29872239.18dfa6960e9cec98
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:39:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872239
+      namespace: catalog
+      resourceVersion: "1082499"
+      uid: c2f72f21-b30c-4d6a-8c44-3bff4236354b
+    kind: Event
+    lastTimestamp: "2026-10-18T14:39:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872239.18dfa697f2b0102b
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:40:00.327465Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872240-9fd22
+      namespace: catalog
+      resourceVersion: "1082682"
+      uid: 731876f3-793f-42d7-9f87-0a3b51341b4f
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872240-9fd22 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872240-9fd22.18dfa6a4123b69b7
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:40:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872240-9fd22
+      namespace: catalog
+      resourceVersion: "1082685"
+      uid: 731876f3-793f-42d7-9f87-0a3b51341b4f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:40:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872240-9fd22.18dfa6a435adcb6a
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:40:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872240-9fd22
+      namespace: catalog
+      resourceVersion: "1082685"
+      uid: 731876f3-793f-42d7-9f87-0a3b51341b4f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:40:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872240-9fd22.18dfa6a436ea9eb9
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:40:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872240-9fd22
+      namespace: catalog
+      resourceVersion: "1082685"
+      uid: 731876f3-793f-42d7-9f87-0a3b51341b4f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:40:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872240-9fd22.18dfa6a43be40975
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:40:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872240
+      namespace: catalog
+      resourceVersion: "1082680"
+      uid: 2851deb4-988a-4b0b-9638-f124358f2468
+    kind: Event
+    lastTimestamp: "2026-10-18T14:40:00Z"
+    message: 'Created pod: catalog-cleanup-29872240-9fd22'
+    metadata:
+      name: catalog-cleanup-29872240.18dfa6a409d3119e
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:40:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872240
+      namespace: catalog
+      resourceVersion: "1082724"
+      uid: 2851deb4-988a-4b0b-9638-f124358f2468
+    kind: Event
+    lastTimestamp: "2026-10-18T14:40:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872240.18dfa6a5f028a190
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:41:00.212141Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872241-jnpz8
+      namespace: catalog
+      resourceVersion: "1082907"
+      uid: c25555fc-9d58-45b5-9e26-cb8a1c0bc734
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872241-jnpz8 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872241-jnpz8.18dfa6b203a2faea
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:41:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872241-jnpz8
+      namespace: catalog
+      resourceVersion: "1082908"
+      uid: c25555fc-9d58-45b5-9e26-cb8a1c0bc734
+    kind: Event
+    lastTimestamp: "2026-10-18T14:41:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872241-jnpz8.18dfa6b22818506b
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:41:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872241-jnpz8
+      namespace: catalog
+      resourceVersion: "1082908"
+      uid: c25555fc-9d58-45b5-9e26-cb8a1c0bc734
+    kind: Event
+    lastTimestamp: "2026-10-18T14:41:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872241-jnpz8.18dfa6b22d34b4db
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:41:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872241-jnpz8
+      namespace: catalog
+      resourceVersion: "1082908"
+      uid: c25555fc-9d58-45b5-9e26-cb8a1c0bc734
+    kind: Event
+    lastTimestamp: "2026-10-18T14:41:00Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872241-jnpz8.18dfa6b230b84107
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:41:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872241
+      namespace: catalog
+      resourceVersion: "1082905"
+      uid: 85a2b0df-e953-42e3-87e6-97224082682e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:41:00Z"
+    message: 'Created pod: catalog-cleanup-29872241-jnpz8'
+    metadata:
+      name: catalog-cleanup-29872241.18dfa6b202d91bb0
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:41:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872241
+      namespace: catalog
+      resourceVersion: "1082948"
+      uid: 85a2b0df-e953-42e3-87e6-97224082682e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:41:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872241.18dfa6b3ef6eb9b8
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:42:00.174504Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872242-s4jdn
+      namespace: catalog
+      resourceVersion: "1083134"
+      uid: 2fd0c3d2-1d81-4706-832f-980d239fcb0e
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872242-s4jdn to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872242-s4jdn.18dfa6bff9ac1236
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:42:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872242-s4jdn
+      namespace: catalog
+      resourceVersion: "1083137"
+      uid: 2fd0c3d2-1d81-4706-832f-980d239fcb0e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:42:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872242-s4jdn.18dfa6c02057be3c
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:42:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872242-s4jdn
+      namespace: catalog
+      resourceVersion: "1083137"
+      uid: 2fd0c3d2-1d81-4706-832f-980d239fcb0e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:42:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872242-s4jdn.18dfa6c02193eb21
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:42:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872242-s4jdn
+      namespace: catalog
+      resourceVersion: "1083137"
+      uid: 2fd0c3d2-1d81-4706-832f-980d239fcb0e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:42:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872242-s4jdn.18dfa6c02bcbd0d3
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:42:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872242
+      namespace: catalog
+      resourceVersion: "1083132"
+      uid: 89a34dc2-8b62-4806-94aa-9e959d7bdd37
+    kind: Event
+    lastTimestamp: "2026-10-18T14:42:00Z"
+    message: 'Created pod: catalog-cleanup-29872242-s4jdn'
+    metadata:
+      name: catalog-cleanup-29872242.18dfa6bff845c680
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:42:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872242
+      namespace: catalog
+      resourceVersion: "1083175"
+      uid: 89a34dc2-8b62-4806-94aa-9e959d7bdd37
+    kind: Event
+    lastTimestamp: "2026-10-18T14:42:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872242.18dfa6c1ece54ff7
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:43:00.218423Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872243-hhcmr
+      namespace: catalog
+      resourceVersion: "1083357"
+      uid: e18d1df3-09e2-481c-a99b-91ac46c298a3
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872243-hhcmr to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872243-hhcmr.18dfa6cdf4918bc5
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:43:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872243-hhcmr
+      namespace: catalog
+      resourceVersion: "1083360"
+      uid: e18d1df3-09e2-481c-a99b-91ac46c298a3
+    kind: Event
+    lastTimestamp: "2026-10-18T14:43:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872243-hhcmr.18dfa6ce1e47fc92
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:43:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872243-hhcmr
+      namespace: catalog
+      resourceVersion: "1083360"
+      uid: e18d1df3-09e2-481c-a99b-91ac46c298a3
+    kind: Event
+    lastTimestamp: "2026-10-18T14:43:01Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872243-hhcmr.18dfa6ce23bee246
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:43:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872243-hhcmr
+      namespace: catalog
+      resourceVersion: "1083360"
+      uid: e18d1df3-09e2-481c-a99b-91ac46c298a3
+    kind: Event
+    lastTimestamp: "2026-10-18T14:43:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872243-hhcmr.18dfa6ce273a66e7
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:43:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872243
+      namespace: catalog
+      resourceVersion: "1083354"
+      uid: ce59e7d3-952d-46bf-b88b-c971c2ee1b98
+    kind: Event
+    lastTimestamp: "2026-10-18T14:43:00Z"
+    message: 'Created pod: catalog-cleanup-29872243-hhcmr'
+    metadata:
+      name: catalog-cleanup-29872243.18dfa6cdf19c18d5
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:43:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872243
+      namespace: catalog
+      resourceVersion: "1083400"
+      uid: ce59e7d3-952d-46bf-b88b-c971c2ee1b98
+    kind: Event
+    lastTimestamp: "2026-10-18T14:43:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872243.18dfa6cfed94e54c
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:44:00.279612Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-cleanup-29872244-5wmh2
+      namespace: catalog
+      resourceVersion: "1083582"
+      uid: 49b48bf1-5977-490a-a2ab-baf19635bf33
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-cleanup-29872244-5wmh2 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-cleanup-29872244-5wmh2.18dfa6dbf07e95e4
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:44:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872244-5wmh2
+      namespace: catalog
+      resourceVersion: "1083585"
+      uid: 49b48bf1-5977-490a-a2ab-baf19635bf33
+    kind: Event
+    lastTimestamp: "2026-10-18T14:44:00Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: catalog-cleanup-29872244-5wmh2.18dfa6dc16813fd1
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:44:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872244-5wmh2
+      namespace: catalog
+      resourceVersion: "1083585"
+      uid: 49b48bf1-5977-490a-a2ab-baf19635bf33
+    kind: Event
+    lastTimestamp: "2026-10-18T14:44:00Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: catalog-cleanup-29872244-5wmh2.18dfa6dc17b88d68
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:44:01Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: catalog-cleanup-29872244-5wmh2
+      namespace: catalog
+      resourceVersion: "1083585"
+      uid: 49b48bf1-5977-490a-a2ab-baf19635bf33
+    kind: Event
+    lastTimestamp: "2026-10-18T14:44:01Z"
+    message: Started container cleanup
+    metadata:
+      name: catalog-cleanup-29872244-5wmh2.18dfa6dc1d006a35
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:44:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872244
+      namespace: catalog
+      resourceVersion: "1083579"
+      uid: 5b1ea140-1b93-474f-9579-6fbc24d7dec5
+    kind: Event
+    lastTimestamp: "2026-10-18T14:44:00Z"
+    message: 'Created pod: catalog-cleanup-29872244-5wmh2'
+    metadata:
+      name: catalog-cleanup-29872244.18dfa6dbead23018
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:44:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: catalog-cleanup-29872244
+      namespace: catalog
+      resourceVersion: "1083626"
+      uid: 5b1ea140-1b93-474f-9579-6fbc24d7dec5
+    kind: Event
+    lastTimestamp: "2026-10-18T14:44:08Z"
+    message: Job completed
+    metadata:
+      name: catalog-cleanup-29872244.18dfa6ddeafd929c
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 5
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:21:43Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1078250"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:21:51Z"
+    message: 'Saw a job that the controller did not create or forgot: manual-cleanup'
+    metadata:
+      name: catalog-cleanup.18dfa5a49c75f00a
+      namespace: catalog
+    reason: UnexpectedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Warning
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:22:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1078391"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:22:00Z"
+    message: Created job catalog-cleanup-29872222
+    metadata:
+      name: catalog-cleanup.18dfa5a8919a1804
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:22:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1078422"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:22:08Z"
+    message: 'Saw completed job: catalog-cleanup-29872222, condition: Complete'
+    metadata:
+      name: catalog-cleanup.18dfa5aa853ffa4b
+      namespace: catalog
+    reason: SawCompletedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:23:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1078475"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:23:00Z"
+    message: Created job catalog-cleanup-29872223
+    metadata:
+      name: catalog-cleanup.18dfa5b68abbda4c
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:23:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1078650"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:23:08Z"
+    message: 'Saw completed job: catalog-cleanup-29872223, condition: Complete'
+    metadata:
+      name: catalog-cleanup.18dfa5b8841c68b5
+      namespace: catalog
+    reason: SawCompletedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:24:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1078774"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:24:00Z"
+    message: Created job catalog-cleanup-29872224
+    metadata:
+      name: catalog-cleanup.18dfa5c481948faf
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:24:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1078878"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:24:08Z"
+    message: 'Saw completed job: catalog-cleanup-29872224, condition: Complete'
+    metadata:
+      name: catalog-cleanup.18dfa5c683808c88
+      namespace: catalog
+    reason: SawCompletedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:25:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1078925"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:25:00Z"
+    message: Created job catalog-cleanup-29872225
+    metadata:
+      name: catalog-cleanup.18dfa5d27a67bd84
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:25:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079160"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:25:09Z"
+    message: Deleted job catalog-cleanup-29872222
+    metadata:
+      name: catalog-cleanup.18dfa5d49c38a44e
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:25:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079160"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:25:09Z"
+    message: 'Saw completed job: catalog-cleanup-29872225, condition: Complete'
+    metadata:
+      name: catalog-cleanup.18dfa5d49c38f9d9
+      namespace: catalog
+    reason: SawCompletedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:26:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079214"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:26:00Z"
+    message: Created job catalog-cleanup-29872226
+    metadata:
+      name: catalog-cleanup.18dfa5e0731dba66
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:26:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079390"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:26:09Z"
+    message: Deleted job catalog-cleanup-29872223
+    metadata:
+      name: catalog-cleanup.18dfa5e295ec3e73
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 2
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:26:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079390"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:26:09Z"
+    message: 'Saw completed job: catalog-cleanup-29872226, condition: Complete'
+    metadata:
+      name: catalog-cleanup.18dfa5e295ed2a98
+      namespace: catalog
+    reason: SawCompletedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:27:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079440"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:27:00Z"
+    message: Created job catalog-cleanup-29872227
+    metadata:
+      name: catalog-cleanup.18dfa5ee6a771874
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:27:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079628"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:27:08Z"
+    message: Deleted job catalog-cleanup-29872224
+    metadata:
+      name: catalog-cleanup.18dfa5f059dd0e9c
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 2
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:27:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079628"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:27:08Z"
+    message: 'Saw completed job: catalog-cleanup-29872227, condition: Complete'
+    metadata:
+      name: catalog-cleanup.18dfa5f059dd508b
+      namespace: catalog
+    reason: SawCompletedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:28:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079677"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:28:00Z"
+    message: Created job catalog-cleanup-29872228
+    metadata:
+      name: catalog-cleanup.18dfa5fc629b48c4
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:28:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079891"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:28:09Z"
+    message: Deleted job catalog-cleanup-29872225
+    metadata:
+      name: catalog-cleanup.18dfa5fe7bb812e4
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:28:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079891"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:28:09Z"
+    message: 'Saw completed job: catalog-cleanup-29872228, condition: Complete'
+    metadata:
+      name: catalog-cleanup.18dfa5fe7bb8fde4
+      namespace: catalog
+    reason: SawCompletedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:29:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1079941"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:29:00Z"
+    message: Created job catalog-cleanup-29872229
+    metadata:
+      name: catalog-cleanup.18dfa60a5b6fcafd
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:29:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1080120"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:29:09Z"
+    message: Deleted job catalog-cleanup-29872226
+    metadata:
+      name: catalog-cleanup.18dfa60c7a629e71
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:29:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1080120"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:29:09Z"
+    message: 'Saw completed job: catalog-cleanup-29872229, condition: Complete'
+    metadata:
+      name: catalog-cleanup.18dfa60c7a62dd70
+      namespace: catalog
+    reason: SawCompletedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:30:00Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1080170"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:30:00Z"
+    message: Created job catalog-cleanup-29872230
+    metadata:
+      name: catalog-cleanup.18dfa61852e5cddb
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:30:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1080347"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:30:08Z"
+    message: Deleted job catalog-cleanup-29872227
+    metadata:
+      name: catalog-cleanup.18dfa61a3ca61b0e
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:30:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1080347"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:30:08Z"
+    message: 'Saw completed job: catalog-cleanup-29872230, condition: Complete'
+    metadata:
+      name: catalog-cleanup.18dfa61a3ca763e6
+      namespace: catalog
+    reason: SawCompletedJob
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:32:08Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1080800"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:32:08Z"
+    message: Deleted job catalog-cleanup-29872229
+    metadata:
+      name: catalog-cleanup.18dfa6363a80df2d
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: cronjob-controller
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - apiVersion: v1
+    count: 9
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:34:09Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: CronJob
+      name: catalog-cleanup
+      namespace: catalog
+      resourceVersion: "1082003"
+      uid: 3d5e602e-cff8-4734-aeea-3685f374d370
+    kind: Event
+    lastTimestamp: "2026-10-18T14:42:08Z"
+    message: '(combined from similar events): Deleted job catalog-cleanup-29872239'
+    metadata:
+      name: catalog-cleanup.18dfa6524d4a7753
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: ""
+    reportingInstance: ""
+    source:
+      component: cronjob-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:15:10.833608Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-mysql-0
+      namespace: catalog
+      resourceVersion: "1076855"
+      uid: e6cd098c-4130-4963-a7f6-e648c9f21987
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-mysql-0 to ip-10-42-186-205.us-east-2.compute.internal
+    metadata:
+      name: catalog-mysql-0.18dfa549457ac4d1
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:11Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-0
+      namespace: catalog
+      resourceVersion: "1076856"
+      uid: e6cd098c-4130-4963-a7f6-e648c9f21987
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:11Z"
+    message: Pulling image "public.ecr.aws/docker/library/mysql:8.0"
+    metadata:
+      name: catalog-mysql-0.18dfa54967a1d5b3
+      namespace: catalog
+    reason: Pulling
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:22Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-0
+      namespace: catalog
+      resourceVersion: "1076856"
+      uid: e6cd098c-4130-4963-a7f6-e648c9f21987
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:22Z"
+    message: 'Successfully pulled image "public.ecr.aws/docker/library/mysql:8.0" in 11.525s (11.525s including waiting). Image size: 233594134 bytes.'
+    metadata:
+      name: catalog-mysql-0.18dfa54c169c3476
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:22Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-0
+      namespace: catalog
+      resourceVersion: "1076856"
+      uid: e6cd098c-4130-4963-a7f6-e648c9f21987
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:22Z"
+    message: 'Created container: mysql'
+    metadata:
+      name: catalog-mysql-0.18dfa54c17de8a87
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:23Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-0
+      namespace: catalog
+      resourceVersion: "1076856"
+      uid: e6cd098c-4130-4963-a7f6-e648c9f21987
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:23Z"
+    message: Started container mysql
+    metadata:
+      name: catalog-mysql-0.18dfa54c1d1588af
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:17:16.652321Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-mysql-1
+      namespace: catalog
+      resourceVersion: "1077327"
+      uid: 26b5976e-f623-4d92-be16-0672d8a0ad2f
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-mysql-1 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-mysql-1.18dfa56690dbf8b1
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:17Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-1
+      namespace: catalog
+      resourceVersion: "1077328"
+      uid: 26b5976e-f623-4d92-be16-0672d8a0ad2f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:17Z"
+    message: Pulling image "public.ecr.aws/docker/library/mysql:8.0"
+    metadata:
+      name: catalog-mysql-1.18dfa566b1df50da
+      namespace: catalog
+    reason: Pulling
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:28Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-1
+      namespace: catalog
+      resourceVersion: "1077328"
+      uid: 26b5976e-f623-4d92-be16-0672d8a0ad2f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:28Z"
+    message: 'Successfully pulled image "public.ecr.aws/docker/library/mysql:8.0" in 11.299s (11.299s including waiting). Image size: 233594134 bytes.'
+    metadata:
+      name: catalog-mysql-1.18dfa5695366dafd
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:28Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-1
+      namespace: catalog
+      resourceVersion: "1077328"
+      uid: 26b5976e-f623-4d92-be16-0672d8a0ad2f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:28Z"
+    message: 'Created container: mysql'
+    metadata:
+      name: catalog-mysql-1.18dfa56959619c4a
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:28Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-1
+      namespace: catalog
+      resourceVersion: "1077328"
+      uid: 26b5976e-f623-4d92-be16-0672d8a0ad2f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:28Z"
+    message: Started container mysql
+    metadata:
+      name: catalog-mysql-1.18dfa5695ebfd8ec
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:57Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-1
+      namespace: catalog
+      resourceVersion: "1077328"
+      uid: 26b5976e-f623-4d92-be16-0672d8a0ad2f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:57Z"
+    message: Stopping container mysql
+    metadata:
+      name: catalog-mysql-1.18dfa570147833b3
+      namespace: catalog
+    reason: Killing
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:17:29.032470Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-mysql-2
+      namespace: catalog
+      resourceVersion: "1077388"
+      uid: 983de3b7-62f1-444b-a79a-09f020a26191
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-mysql-2 to ip-10-42-133-47.us-east-2.compute.internal
+    metadata:
+      name: catalog-mysql-2.18dfa56972c6042c
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:29Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-2
+      namespace: catalog
+      resourceVersion: "1077389"
+      uid: 983de3b7-62f1-444b-a79a-09f020a26191
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:29Z"
+    message: Pulling image "public.ecr.aws/docker/library/mysql:8.0"
+    metadata:
+      name: catalog-mysql-2.18dfa5699158e66e
+      namespace: catalog
+    reason: Pulling
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-2
+      namespace: catalog
+      resourceVersion: "1077389"
+      uid: 983de3b7-62f1-444b-a79a-09f020a26191
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:40Z"
+    message: 'Successfully pulled image "public.ecr.aws/docker/library/mysql:8.0" in 10.524s (10.524s including waiting). Image size: 233594134 bytes.'
+    metadata:
+      name: catalog-mysql-2.18dfa56c04abbda1
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-2
+      namespace: catalog
+      resourceVersion: "1077389"
+      uid: 983de3b7-62f1-444b-a79a-09f020a26191
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:40Z"
+    message: 'Created container: mysql'
+    metadata:
+      name: catalog-mysql-2.18dfa56c05faef1f
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-2
+      namespace: catalog
+      resourceVersion: "1077389"
+      uid: 983de3b7-62f1-444b-a79a-09f020a26191
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:40Z"
+    message: Started container mysql
+    metadata:
+      name: catalog-mysql-2.18dfa56c0b1a1b7e
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:54Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-2
+      namespace: catalog
+      resourceVersion: "1077389"
+      uid: 983de3b7-62f1-444b-a79a-09f020a26191
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:54Z"
+    message: Stopping container mysql
+    metadata:
+      name: catalog-mysql-2.18dfa56f789256fd
+      namespace: catalog
+    reason: Killing
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:10Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: StatefulSet
+      name: catalog-mysql
+      namespace: catalog
+      resourceVersion: "1076842"
+      uid: f9f3d56d-0480-49b5-8cb8-34fe22550ea1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:10Z"
+    message: create Pod catalog-mysql-0 in StatefulSet catalog-mysql successful
+    metadata:
+      name: catalog-mysql.18dfa5494524fc82
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: statefulset-controller
+    reportingInstance: ""
+    source:
+      component: statefulset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:16Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: StatefulSet
+      name: catalog-mysql
+      namespace: catalog
+      resourceVersion: "1077326"
+      uid: f9f3d56d-0480-49b5-8cb8-34fe22550ea1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:16Z"
+    message: create Pod catalog-mysql-1 in StatefulSet catalog-mysql successful
+    metadata:
+      name: catalog-mysql.18dfa5669084cc0b
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: statefulset-controller
+    reportingInstance: ""
+    source:
+      component: statefulset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:29Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: StatefulSet
+      name: catalog-mysql
+      namespace: catalog
+      resourceVersion: "1077334"
+      uid: f9f3d56d-0480-49b5-8cb8-34fe22550ea1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:29Z"
+    message: create Pod catalog-mysql-2 in StatefulSet catalog-mysql successful
+    metadata:
+      name: catalog-mysql.18dfa569725433a5
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: statefulset-controller
+    reportingInstance: ""
+    source:
+      component: statefulset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:54Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: StatefulSet
+      name: catalog-mysql
+      namespace: catalog
+      resourceVersion: "1077491"
+      uid: f9f3d56d-0480-49b5-8cb8-34fe22550ea1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:54Z"
+    message: delete Pod catalog-mysql-2 in StatefulSet catalog-mysql successful
+    metadata:
+      name: catalog-mysql.18dfa56f7868260e
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: statefulset-controller
+    reportingInstance: ""
+    source:
+      component: statefulset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:17:57Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: StatefulSet
+      name: catalog-mysql
+      namespace: catalog
+      resourceVersion: "1077504"
+      uid: f9f3d56d-0480-49b5-8cb8-34fe22550ea1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:17:57Z"
+    message: delete Pod catalog-mysql-1 in StatefulSet catalog-mysql successful
+    metadata:
+      name: catalog-mysql.18dfa570147ed5d5
+      namespace: catalog
+    reason: SuccessfulDelete
+    reportingComponent: statefulset-controller
+    reportingInstance: ""
+    source:
+      component: statefulset-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:35:04.290842Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-pod
+      namespace: catalog
+      resourceVersion: "1081571"
+      uid: 4ba2b357-9ffb-4800-9df0-ab291a346c3f
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-pod to ip-10-42-133-47.us-east-2.compute.internal
+    metadata:
+      name: catalog-pod.18dfa65f2512ebe6
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:35:04Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-pod
+      namespace: catalog
+      resourceVersion: "1081572"
+      uid: 4ba2b357-9ffb-4800-9df0-ab291a346c3f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:35:04Z"
+    message: Pulling image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1"
+    metadata:
+      name: catalog-pod.18dfa65f46adeea2
+      namespace: catalog
+    reason: Pulling
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:35:06Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-pod
+      namespace: catalog
+      resourceVersion: "1081572"
+      uid: 4ba2b357-9ffb-4800-9df0-ab291a346c3f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:35:06Z"
+    message: 'Successfully pulled image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1" in 1.156s (1.156s including waiting). Image size: 75471480 bytes.'
+    metadata:
+      name: catalog-pod.18dfa65f8b9fc118
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:35:06Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-pod
+      namespace: catalog
+      resourceVersion: "1081572"
+      uid: 4ba2b357-9ffb-4800-9df0-ab291a346c3f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:35:06Z"
+    message: 'Created container: catalog'
+    metadata:
+      name: catalog-pod.18dfa65f8e1563fd
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:35:06Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-pod
+      namespace: catalog
+      resourceVersion: "1081572"
+      uid: 4ba2b357-9ffb-4800-9df0-ab291a346c3f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:35:06Z"
+    message: Started container catalog
+    metadata:
+      name: catalog-pod.18dfa65f976503be
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:15:10Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: catalog
+      namespace: catalog
+      resourceVersion: "1076840"
+      uid: a31b9682-550f-4e2e-bc5f-0f010e2b44ea
+    kind: Event
+    lastTimestamp: "2026-10-18T14:15:10Z"
+    message: Scaled up replica set catalog-7bc7d5c444 from 0 to 1
+    metadata:
+      name: catalog.18dfa5493f5b0da6
+      namespace: catalog
+    reason: ScalingReplicaSet
+    reportingComponent: deployment-controller
+    reportingInstance: ""
+    source:
+      component: deployment-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:20:22.185741Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: data-processor-jt5jx
+      namespace: catalog
+      resourceVersion: "1078046"
+      uid: dc2517c9-5650-4856-9d99-602d88344f97
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/data-processor-jt5jx to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: data-processor-jt5jx.18dfa591c3834495
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:20:22Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{processor}
+      kind: Pod
+      name: data-processor-jt5jx
+      namespace: catalog
+      resourceVersion: "1078047"
+      uid: dc2517c9-5650-4856-9d99-602d88344f97
+    kind: Event
+    lastTimestamp: "2026-10-18T14:20:22Z"
+    message: Pulling image "busybox:1.36"
+    metadata:
+      name: data-processor-jt5jx.18dfa591e32f677c
+      namespace: catalog
+    reason: Pulling
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:20:23Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{processor}
+      kind: Pod
+      name: data-processor-jt5jx
+      namespace: catalog
+      resourceVersion: "1078047"
+      uid: dc2517c9-5650-4856-9d99-602d88344f97
+    kind: Event
+    lastTimestamp: "2026-10-18T14:20:23Z"
+    message: 'Successfully pulled image "busybox:1.36" in 613ms (613ms including waiting). Image size: 2217006 bytes.'
+    metadata:
+      name: data-processor-jt5jx.18dfa59207c89d3d
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:20:23Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{processor}
+      kind: Pod
+      name: data-processor-jt5jx
+      namespace: catalog
+      resourceVersion: "1078047"
+      uid: dc2517c9-5650-4856-9d99-602d88344f97
+    kind: Event
+    lastTimestamp: "2026-10-18T14:20:23Z"
+    message: 'Created container: processor'
+    metadata:
+      name: data-processor-jt5jx.18dfa5920906b8c2
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:20:23Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{processor}
+      kind: Pod
+      name: data-processor-jt5jx
+      namespace: catalog
+      resourceVersion: "1078047"
+      uid: dc2517c9-5650-4856-9d99-602d88344f97
+    kind: Event
+    lastTimestamp: "2026-10-18T14:20:23Z"
+    message: Started container processor
+    metadata:
+      name: data-processor-jt5jx.18dfa5920e5f7360
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:20:22Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: data-processor
+      namespace: catalog
+      resourceVersion: "1078044"
+      uid: ed430be9-f145-4a72-b8fa-04e3d375a9bc
+    kind: Event
+    lastTimestamp: "2026-10-18T14:20:22Z"
+    message: 'Created pod: data-processor-jt5jx'
+    metadata:
+      name: data-processor.18dfa591c3294741
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:20:36Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: data-processor
+      namespace: catalog
+      resourceVersion: "1078109"
+      uid: ed430be9-f145-4a72-b8fa-04e3d375a9bc
+    kind: Event
+    lastTimestamp: "2026-10-18T14:20:36Z"
+    message: Job completed
+    metadata:
+      name: data-processor.18dfa5950fc0f224
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:21:43.126177Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: manual-cleanup-66bpn
+      namespace: catalog
+      resourceVersion: "1078339"
+      uid: 03c08d9d-f7c7-4a69-b5f2-42c23af24aee
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/manual-cleanup-66bpn to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: manual-cleanup-66bpn.18dfa5a49bf048c3
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:21:43Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: manual-cleanup-66bpn
+      namespace: catalog
+      resourceVersion: "1078340"
+      uid: 03c08d9d-f7c7-4a69-b5f2-42c23af24aee
+    kind: Event
+    lastTimestamp: "2026-10-18T14:21:43Z"
+    message: Container image "busybox:1.36" already present on machine
+    metadata:
+      name: manual-cleanup-66bpn.18dfa5a4bf668ee4
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:21:43Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: manual-cleanup-66bpn
+      namespace: catalog
+      resourceVersion: "1078340"
+      uid: 03c08d9d-f7c7-4a69-b5f2-42c23af24aee
+    kind: Event
+    lastTimestamp: "2026-10-18T14:21:43Z"
+    message: 'Created container: cleanup'
+    metadata:
+      name: manual-cleanup-66bpn.18dfa5a4c0b97524
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:21:43Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{cleanup}
+      kind: Pod
+      name: manual-cleanup-66bpn
+      namespace: catalog
+      resourceVersion: "1078340"
+      uid: 03c08d9d-f7c7-4a69-b5f2-42c23af24aee
+    kind: Event
+    lastTimestamp: "2026-10-18T14:21:43Z"
+    message: Started container cleanup
+    metadata:
+      name: manual-cleanup-66bpn.18dfa5a4c5cd34b1
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:21:43Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: manual-cleanup
+      namespace: catalog
+      resourceVersion: "1078338"
+      uid: 5d7934dc-d5ce-444a-b687-8af756de0219
+    kind: Event
+    lastTimestamp: "2026-10-18T14:21:43Z"
+    message: 'Created pod: manual-cleanup-66bpn'
+    metadata:
+      name: manual-cleanup.18dfa5a49b85d3a5
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:21:51Z"
+    involvedObject:
+      apiVersion: batch/v1
+      kind: Job
+      name: manual-cleanup
+      namespace: catalog
+      resourceVersion: "1078386"
+      uid: 5d7934dc-d5ce-444a-b687-8af756de0219
+    kind: Event
+    lastTimestamp: "2026-10-18T14:21:51Z"
+    message: Job completed
+    metadata:
+      name: manual-cleanup.18dfa5a68d07e661
+      namespace: catalog
+    reason: Completed
+    reportingComponent: job-controller
+    reportingInstance: ""
+    source:
+      component: job-controller
+    type: Normal
+kind: List
+metadata:
+  resourceVersion: ""

@@ -1,0 +1,39 @@
+apiVersion: v1
+items:
+  - apiVersion: metrics.k8s.io/v1beta1
+    containers:
+      - name: ui
+        usage:
+          cpu: 745735n
+          memory: 218244Ki
+    kind: PodMetrics
+    metadata:
+      labels:
+        app.kubernetes.io/component: service
+        app.kubernetes.io/created-by: eks-workshop
+        app.kubernetes.io/instance: ui
+        app.kubernetes.io/name: ui
+        pod-template-hash: 65bdcb6c9
+      name: ui-65bdcb6c9-c8crv
+      namespace: ui
+    timestamp: "2026-10-18T14:43:25Z"
+    window: 19.873s
+  - apiVersion: metrics.k8s.io/v1beta1
+    containers:
+      - name: ui
+        usage:
+          cpu: 304449n
+          memory: 162852Ki
+    kind: PodMetrics
+    metadata:
+      labels:
+        app.kubernetes.io/component: service
+        app.kubernetes.io/created-by: eks-workshop
+        app.kubernetes.io/name: ui
+      name: ui-pod
+      namespace: ui
+    timestamp: "2026-10-18T14:43:28Z"
+    window: 14.61s
+kind: List
+metadata:
+  resourceVersion: ""

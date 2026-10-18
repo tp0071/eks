@@ -1,0 +1,50 @@
+apiVersion: v1
+items:
+  - apiVersion: v1
+    kind: Endpoints
+    metadata:
+      annotations:
+        endpoints.kubernetes.io/last-change-trigger-time: "2026-10-18T14:16:13Z"
+      labels:
+        app.kubernetes.io/created-by: eks-workshop
+        endpoints.kubernetes.io/managed-by: endpoint-controller
+      name: catalog
+      namespace: catalog
+    subsets:
+      - addresses:
+          - ip: 10.42.184.162
+            nodeName: ip-10-42-186-205.us-east-2.compute.internal
+            targetRef:
+              kind: Pod
+              name: catalog-7bc7d5c444-rzh7h
+              namespace: catalog
+              uid: 939e27b2-53e9-4bd0-9d05-02c1bf6c87ea
+        ports:
+          - name: http
+            port: 8080
+            protocol: TCP
+  - apiVersion: v1
+    kind: Endpoints
+    metadata:
+      labels:
+        app.kubernetes.io/created-by: eks-workshop
+        endpoints.kubernetes.io/managed-by: endpoint-controller
+      name: catalog-mysql
+      namespace: catalog
+    subsets:
+      - addresses:
+          - hostname: catalog-mysql-0
+            ip: 10.42.184.163
+            nodeName: ip-10-42-186-205.us-east-2.compute.internal
+            targetRef:
+              kind: Pod
+              name: catalog-mysql-0
+              namespace: catalog
+              uid: e6cd098c-4130-4963-a7f6-e648c9f21987
+        ports:
+          - name: mysql
+            port: 3306
+            protocol: TCP
+kind: List
+metadata:
+  resourceVersion: ""

@@ -1,0 +1,31 @@
+apiVersion: v1
+items:
+  - apiVersion: v1
+    kind: Endpoints
+    metadata:
+      annotations:
+        endpoints.kubernetes.io/last-change-trigger-time: "2026-10-18T15:00:00Z"
+      labels:
+        app.kubernetes.io/component: service
+        app.kubernetes.io/created-by: eks-workshop
+        app.kubernetes.io/instance: ui
+        app.kubernetes.io/name: ui
+        endpoints.kubernetes.io/managed-by: endpoint-controller
+      name: ui
+      namespace: ui
+    subsets:
+      - addresses:
+          - ip: 10.42.100.0
+            nodeName: ip-10-42-108-77.us-east-2.compute.internal
+            targetRef:
+              kind: Pod
+              name: ui-65bdcb6c9-hvhgk
+              namespace: ui
+              uid: cfea2690-fd17-4bc9-9063-f7a884d8fb8d
+        ports:
+          - name: http
+            port: 8080
+            protocol: TCP
+kind: List
+metadata:
+  resourceVersion: ""

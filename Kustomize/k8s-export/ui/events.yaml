@@ -1,0 +1,583 @@
+apiVersion: v1
+items:
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:54:10.539333Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: ui-65bdcb6c9-bmhk6
+      namespace: ui
+      resourceVersion: "1086628"
+      uid: 6c65a54f-042a-4e39-98c4-0358a9ba6fd0
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned ui/ui-65bdcb6c9-bmhk6 to ip-10-42-186-205.us-east-2.compute.internal
+    metadata:
+      name: ui-65bdcb6c9-bmhk6.18dfa76a06ceda3b
+      namespace: ui
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:11Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-bmhk6
+      namespace: ui
+      resourceVersion: "1086632"
+      uid: 6c65a54f-042a-4e39-98c4-0358a9ba6fd0
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:11Z"
+    message: Container image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" already present on machine
+    metadata:
+      name: ui-65bdcb6c9-bmhk6.18dfa76a294c6876
+      namespace: ui
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:11Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-bmhk6
+      namespace: ui
+      resourceVersion: "1086632"
+      uid: 6c65a54f-042a-4e39-98c4-0358a9ba6fd0
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:11Z"
+    message: 'Created container: ui'
+    metadata:
+      name: ui-65bdcb6c9-bmhk6.18dfa76a2af72b46
+      namespace: ui
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:11Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-bmhk6
+      namespace: ui
+      resourceVersion: "1086632"
+      uid: 6c65a54f-042a-4e39-98c4-0358a9ba6fd0
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:11Z"
+    message: Started container ui
+    metadata:
+      name: ui-65bdcb6c9-bmhk6.18dfa76a2eb028d1
+      namespace: ui
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-bmhk6
+      namespace: ui
+      resourceVersion: "1086632"
+      uid: 6c65a54f-042a-4e39-98c4-0358a9ba6fd0
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: Stopping container ui
+    metadata:
+      name: ui-65bdcb6c9-bmhk6.18dfa7a461f43307
+      namespace: ui
+    reason: Killing
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:58:21.288821Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: ui-65bdcb6c9-bvjt7
+      namespace: ui
+      resourceVersion: "1087621"
+      uid: 80f7b41d-fbec-487e-8cbb-a8e91b6b2c1b
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned ui/ui-65bdcb6c9-bvjt7 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: ui-65bdcb6c9-bvjt7.18dfa7a468a484ca
+      namespace: ui
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-bvjt7
+      namespace: ui
+      resourceVersion: "1087629"
+      uid: 80f7b41d-fbec-487e-8cbb-a8e91b6b2c1b
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: Container image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" already present on machine
+    metadata:
+      name: ui-65bdcb6c9-bvjt7.18dfa7a48baa2a83
+      namespace: ui
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-bvjt7
+      namespace: ui
+      resourceVersion: "1087629"
+      uid: 80f7b41d-fbec-487e-8cbb-a8e91b6b2c1b
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: 'Created container: ui'
+    metadata:
+      name: ui-65bdcb6c9-bvjt7.18dfa7a48d16de3f
+      namespace: ui
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-bvjt7
+      namespace: ui
+      resourceVersion: "1087629"
+      uid: 80f7b41d-fbec-487e-8cbb-a8e91b6b2c1b
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: Started container ui
+    metadata:
+      name: ui-65bdcb6c9-bvjt7.18dfa7a491d4be83
+      namespace: ui
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:59:59Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-bvjt7
+      namespace: ui
+      resourceVersion: "1087629"
+      uid: 80f7b41d-fbec-487e-8cbb-a8e91b6b2c1b
+    kind: Event
+    lastTimestamp: "2026-10-18T14:59:59Z"
+    message: Stopping container ui
+    metadata:
+      name: ui-65bdcb6c9-bvjt7.18dfa7bb319b6be3
+      namespace: ui
+    reason: Killing
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:59:59.296221Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: ui-65bdcb6c9-hvhgk
+      namespace: ui
+      resourceVersion: "1088118"
+      uid: cfea2690-fd17-4bc9-9063-f7a884d8fb8d
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned ui/ui-65bdcb6c9-hvhgk to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: ui-65bdcb6c9-hvhgk.18dfa7bb3a56ea59
+      namespace: ui
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:59:59Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-hvhgk
+      namespace: ui
+      resourceVersion: "1088121"
+      uid: cfea2690-fd17-4bc9-9063-f7a884d8fb8d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:59:59Z"
+    message: Container image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" already present on machine
+    metadata:
+      name: ui-65bdcb6c9-hvhgk.18dfa7bb5d36308a
+      namespace: ui
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:59:59Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-hvhgk
+      namespace: ui
+      resourceVersion: "1088121"
+      uid: cfea2690-fd17-4bc9-9063-f7a884d8fb8d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:59:59Z"
+    message: 'Created container: ui'
+    metadata:
+      name: ui-65bdcb6c9-hvhgk.18dfa7bb5e766027
+      namespace: ui
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:59:59Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-hvhgk
+      namespace: ui
+      resourceVersion: "1088121"
+      uid: cfea2690-fd17-4bc9-9063-f7a884d8fb8d
+    kind: Event
+    lastTimestamp: "2026-10-18T14:59:59Z"
+    message: Started container ui
+    metadata:
+      name: ui-65bdcb6c9-hvhgk.18dfa7bb63a40fef
+      namespace: ui
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:52:40.121167Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: ui-65bdcb6c9-zg4tn
+      namespace: ui
+      resourceVersion: "1086152"
+      uid: 859192f3-9611-4016-b917-3df783fcf46e
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned ui/ui-65bdcb6c9-zg4tn to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: ui-65bdcb6c9-zg4tn.18dfa754f9772259
+      namespace: ui
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-zg4tn
+      namespace: ui
+      resourceVersion: "1086153"
+      uid: 859192f3-9611-4016-b917-3df783fcf46e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:40Z"
+    message: Container image "public.ecr.aws/aws-containers/retail-store-sample-ui:1.2.1" already present on machine
+    metadata:
+      name: ui-65bdcb6c9-zg4tn.18dfa7551d08b664
+      namespace: ui
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-zg4tn
+      namespace: ui
+      resourceVersion: "1086153"
+      uid: 859192f3-9611-4016-b917-3df783fcf46e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:40Z"
+    message: 'Created container: ui'
+    metadata:
+      name: ui-65bdcb6c9-zg4tn.18dfa7551f4ad397
+      namespace: ui
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-zg4tn
+      namespace: ui
+      resourceVersion: "1086153"
+      uid: 859192f3-9611-4016-b917-3df783fcf46e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:40Z"
+    message: Started container ui
+    metadata:
+      name: ui-65bdcb6c9-zg4tn.18dfa755254558fd
+      namespace: ui
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:10Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{ui}
+      kind: Pod
+      name: ui-65bdcb6c9-zg4tn
+      namespace: ui
+      resourceVersion: "1086153"
+      uid: 859192f3-9611-4016-b917-3df783fcf46e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:10Z"
+    message: Stopping container ui
+    metadata:
+      name: ui-65bdcb6c9-zg4tn.18dfa76a00f9954a
+      namespace: ui
+    reason: Killing
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1086123"
+      uid: 4e7996f5-f489-49da-abe3-df3921f1be91
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:40Z"
+    message: 'Created pod: ui-65bdcb6c9-zg4tn'
+    metadata:
+      name: ui-65bdcb6c9.18dfa754f93a7bba
+      namespace: ui
+    reason: SuccessfulCreate
+    reportingComponent: replicaset-controller
+    reportingInstance: ""
+    source:
+      component: replicaset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:10Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1086202"
+      uid: 4e7996f5-f489-49da-abe3-df3921f1be91
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:10Z"
+    message: 'Created pod: ui-65bdcb6c9-bmhk6'
+    metadata:
+      name: ui-65bdcb6c9.18dfa76a06c7339b
+      namespace: ui
+    reason: SuccessfulCreate
+    reportingComponent: replicaset-controller
+    reportingInstance: ""
+    source:
+      component: replicaset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1086693"
+      uid: 4e7996f5-f489-49da-abe3-df3921f1be91
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: 'Created pod: ui-65bdcb6c9-bvjt7'
+    metadata:
+      name: ui-65bdcb6c9.18dfa7a4659d2fe9
+      namespace: ui
+    reason: SuccessfulCreate
+    reportingComponent: replicaset-controller
+    reportingInstance: ""
+    source:
+      component: replicaset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:59:59Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: ui-65bdcb6c9
+      namespace: ui
+      resourceVersion: "1087708"
+      uid: 4e7996f5-f489-49da-abe3-df3921f1be91
+    kind: Event
+    lastTimestamp: "2026-10-18T14:59:59Z"
+    message: 'Created pod: ui-65bdcb6c9-hvhgk'
+    metadata:
+      name: ui-65bdcb6c9.18dfa7bb3a872540
+      namespace: ui
+    reason: SuccessfulCreate
+    reportingComponent: replicaset-controller
+    reportingInstance: ""
+    source:
+      component: replicaset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:39Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: ui
+      namespace: ui
+      resourceVersion: "1086114"
+      uid: 03a2f3df-9c78-4025-84d1-5a49009eeeb3
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:39Z"
+    message: Scaled up replica set ui-65bdcb6c9 from 0 to 1
+    metadata:
+      name: ui.18dfa754eee73921
+      namespace: ui
+    reason: ScalingReplicaSet
+    reportingComponent: deployment-controller
+    reportingInstance: ""
+    source:
+      component: deployment-controller
+    type: Normal
+kind: List
+metadata:
+  resourceVersion: ""

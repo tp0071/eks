@@ -1,0 +1,103 @@
+apiVersion: v1
+items:
+  - apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      annotations:
+        deployment.kubernetes.io/revision: "1"
+      labels:
+        app.kubernetes.io/created-by: eks-workshop
+        app.kubernetes.io/type: app
+      name: catalog
+      namespace: catalog
+    spec:
+      progressDeadlineSeconds: 600
+      replicas: 1
+      revisionHistoryLimit: 10
+      selector:
+        matchLabels:
+          app.kubernetes.io/component: service
+          app.kubernetes.io/instance: catalog
+          app.kubernetes.io/name: catalog
+      strategy:
+        rollingUpdate:
+          maxSurge: 25%
+          maxUnavailable: 25%
+        type: RollingUpdate
+      template:
+        metadata:
+          annotations:
+            prometheus.io/path: /metrics
+            prometheus.io/port: "8080"
+            prometheus.io/scrape: "true"
+          labels:
+            app.kubernetes.io/component: service
+            app.kubernetes.io/created-by: eks-workshop
+            app.kubernetes.io/instance: catalog
+            app.kubernetes.io/name: catalog
+        spec:
+          containers:
+            - envFrom:
+                - configMapRef:
+                    name: catalog
+                - secretRef:
+                    name: catalog-db
+              image: public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1
+              imagePullPolicy: IfNotPresent
+              livenessProbe:
+                failureThreshold: 3
+                httpGet:
+                  path: /health
+                  port: 8080
+                  scheme: HTTP
+                initialDelaySeconds: 30
+                periodSeconds: 3
+                successThreshold: 1
+                timeoutSeconds: 1
+              name: catalog
+              ports:
+                - containerPort: 8080
+                  name: http
+                  protocol: TCP
+              readinessProbe:
+                failureThreshold: 3
+                httpGet:
+                  path: /health
+                  port: 8080
+                  scheme: HTTP
+                periodSeconds: 5
+                successThreshold: 3
+                timeoutSeconds: 1
+              resources:
+                limits:
+                  memory: 512Mi
+                requests:
+                  cpu: 250m
+                  memory: 512Mi
+              securityContext:
+                capabilities:
+                  drop:
+                    - ALL
+                readOnlyRootFilesystem: true
+                runAsNonRoot: true
+                runAsUser: 1000
+              terminationMessagePath: /dev/termination-log
+              terminationMessagePolicy: File
+              volumeMounts:
+                - mountPath: /tmp
+                  name: tmp-volume
+          dnsPolicy: ClusterFirst
+          restartPolicy: Always
+          schedulerName: default-scheduler
+          securityContext:
+            fsGroup: 1000
+          serviceAccount: catalog
+          serviceAccountName: catalog
+          terminationGracePeriodSeconds: 30
+          volumes:
+            - emptyDir:
+                medium: Memory
+              name: tmp-volume
+kind: List
+metadata:
+  resourceVersion: ""

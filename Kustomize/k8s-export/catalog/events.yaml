@@ -1,0 +1,778 @@
+apiVersion: v1
+items:
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:52:39.807102Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-7bc7d5c444-8psvt
+      namespace: catalog
+      resourceVersion: "1086089"
+      uid: 8f0b692c-afe2-47c8-a9b1-61579f8dbce5
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-7bc7d5c444-8psvt to ip-10-42-186-205.us-east-2.compute.internal
+    metadata:
+      name: catalog-7bc7d5c444-8psvt.18dfa754e6bee31f
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 4
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-8psvt
+      namespace: catalog
+      resourceVersion: "1086095"
+      uid: 8f0b692c-afe2-47c8-a9b1-61579f8dbce5
+    kind: Event
+    lastTimestamp: "2026-10-18T14:53:32Z"
+    message: Container image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1" already present on machine
+    metadata:
+      name: catalog-7bc7d5c444-8psvt.18dfa7550602aec1
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 4
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-8psvt
+      namespace: catalog
+      resourceVersion: "1086095"
+      uid: 8f0b692c-afe2-47c8-a9b1-61579f8dbce5
+    kind: Event
+    lastTimestamp: "2026-10-18T14:53:32Z"
+    message: 'Created container: catalog'
+    metadata:
+      name: catalog-7bc7d5c444-8psvt.18dfa7550834a4de
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 4
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-8psvt
+      namespace: catalog
+      resourceVersion: "1086095"
+      uid: 8f0b692c-afe2-47c8-a9b1-61579f8dbce5
+    kind: Event
+    lastTimestamp: "2026-10-18T14:53:32Z"
+    message: Started container catalog
+    metadata:
+      name: catalog-7bc7d5c444-8psvt.18dfa7550e600887
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 7
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:42Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-8psvt
+      namespace: catalog
+      resourceVersion: "1086095"
+      uid: 8f0b692c-afe2-47c8-a9b1-61579f8dbce5
+    kind: Event
+    lastTimestamp: "2026-10-18T14:53:20Z"
+    message: Back-off restarting failed container catalog in pod catalog-7bc7d5c444-8psvt_catalog(8f0b692c-afe2-47c8-a9b1-61579f8dbce5)
+    metadata:
+      name: catalog-7bc7d5c444-8psvt.18dfa755731160d7
+      namespace: catalog
+    reason: BackOff
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Warning
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:10Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-8psvt
+      namespace: catalog
+      resourceVersion: "1086095"
+      uid: 8f0b692c-afe2-47c8-a9b1-61579f8dbce5
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:10Z"
+    message: Stopping container catalog
+    metadata:
+      name: catalog-7bc7d5c444-8psvt.18dfa769fe628336
+      namespace: catalog
+    reason: Killing
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-186-205.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-186-205.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:59:59.202449Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-7bc7d5c444-gfcsr
+      namespace: catalog
+      resourceVersion: "1088094"
+      uid: d1f22a29-9402-4c03-8fbc-51ced3b444e2
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-7bc7d5c444-gfcsr to ip-10-42-133-47.us-east-2.compute.internal
+    metadata:
+      name: catalog-7bc7d5c444-gfcsr.18dfa7bb34bfc77c
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:59:59Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-gfcsr
+      namespace: catalog
+      resourceVersion: "1088096"
+      uid: d1f22a29-9402-4c03-8fbc-51ced3b444e2
+    kind: Event
+    lastTimestamp: "2026-10-18T14:59:59Z"
+    message: Container image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1" already present on machine
+    metadata:
+      name: catalog-7bc7d5c444-gfcsr.18dfa7bb5f5aa017
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:59:59Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-gfcsr
+      namespace: catalog
+      resourceVersion: "1088096"
+      uid: d1f22a29-9402-4c03-8fbc-51ced3b444e2
+    kind: Event
+    lastTimestamp: "2026-10-18T14:59:59Z"
+    message: 'Created container: catalog'
+    metadata:
+      name: catalog-7bc7d5c444-gfcsr.18dfa7bb61228b11
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T15:00:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-gfcsr
+      namespace: catalog
+      resourceVersion: "1088096"
+      uid: d1f22a29-9402-4c03-8fbc-51ced3b444e2
+    kind: Event
+    lastTimestamp: "2026-10-18T15:00:00Z"
+    message: Started container catalog
+    metadata:
+      name: catalog-7bc7d5c444-gfcsr.18dfa7bb6aac9d80
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T15:00:00Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-gfcsr
+      namespace: catalog
+      resourceVersion: "1088096"
+      uid: d1f22a29-9402-4c03-8fbc-51ced3b444e2
+    kind: Event
+    lastTimestamp: "2026-10-18T15:00:00Z"
+    message: 'Readiness probe failed: Get "http://10.42.128.48:8080/health": dial tcp 10.42.128.48:8080: connect: connection refused'
+    metadata:
+      name: catalog-7bc7d5c444-gfcsr.18dfa7bb929d34f9
+      namespace: catalog
+    reason: Unhealthy
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-133-47.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-133-47.us-east-2.compute.internal
+    type: Warning
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:54:10.538971Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-7bc7d5c444-swk8v
+      namespace: catalog
+      resourceVersion: "1086627"
+      uid: 9b052c9d-f268-4f25-a676-afdb964a089e
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-7bc7d5c444-swk8v to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-7bc7d5c444-swk8v.18dfa76a06c9675c
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:11Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-swk8v
+      namespace: catalog
+      resourceVersion: "1086631"
+      uid: 9b052c9d-f268-4f25-a676-afdb964a089e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:11Z"
+    message: Pulling image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1"
+    metadata:
+      name: catalog-7bc7d5c444-swk8v.18dfa76a250e2679
+      namespace: catalog
+    reason: Pulling
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:12Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-swk8v
+      namespace: catalog
+      resourceVersion: "1086631"
+      uid: 9b052c9d-f268-4f25-a676-afdb964a089e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:12Z"
+    message: 'Successfully pulled image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1" in 1.13s (1.13s including waiting). Image size: 75471480 bytes.'
+    metadata:
+      name: catalog-7bc7d5c444-swk8v.18dfa76a687328a8
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:12Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-swk8v
+      namespace: catalog
+      resourceVersion: "1086631"
+      uid: 9b052c9d-f268-4f25-a676-afdb964a089e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:12Z"
+    message: 'Created container: catalog'
+    metadata:
+      name: catalog-7bc7d5c444-swk8v.18dfa76a69be57a0
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:12Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-swk8v
+      namespace: catalog
+      resourceVersion: "1086631"
+      uid: 9b052c9d-f268-4f25-a676-afdb964a089e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:12Z"
+    message: Started container catalog
+    metadata:
+      name: catalog-7bc7d5c444-swk8v.18dfa76a6fb14eff
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-swk8v
+      namespace: catalog
+      resourceVersion: "1086631"
+      uid: 9b052c9d-f268-4f25-a676-afdb964a089e
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: Stopping container catalog
+    metadata:
+      name: catalog-7bc7d5c444-swk8v.18dfa7a45e664f08
+      namespace: catalog
+    reason: Killing
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:58:21.270693Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-7bc7d5c444-xvjwx
+      namespace: catalog
+      resourceVersion: "1087622"
+      uid: 62bac41a-161d-4188-9ba0-d8a307bca39f
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-7bc7d5c444-xvjwx to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-7bc7d5c444-xvjwx.18dfa7a4678fd206
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-xvjwx
+      namespace: catalog
+      resourceVersion: "1087630"
+      uid: 62bac41a-161d-4188-9ba0-d8a307bca39f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: Container image "public.ecr.aws/aws-containers/retail-store-sample-catalog:1.2.1" already present on machine
+    metadata:
+      name: catalog-7bc7d5c444-xvjwx.18dfa7a48b19b7a2
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-xvjwx
+      namespace: catalog
+      resourceVersion: "1087630"
+      uid: 62bac41a-161d-4188-9ba0-d8a307bca39f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: 'Created container: catalog'
+    metadata:
+      name: catalog-7bc7d5c444-xvjwx.18dfa7a48c949ef3
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-xvjwx
+      namespace: catalog
+      resourceVersion: "1087630"
+      uid: 62bac41a-161d-4188-9ba0-d8a307bca39f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: Started container catalog
+    metadata:
+      name: catalog-7bc7d5c444-xvjwx.18dfa7a491ad1df7
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:59:59Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{catalog}
+      kind: Pod
+      name: catalog-7bc7d5c444-xvjwx
+      namespace: catalog
+      resourceVersion: "1087630"
+      uid: 62bac41a-161d-4188-9ba0-d8a307bca39f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:59:59Z"
+    message: Stopping container catalog
+    metadata:
+      name: catalog-7bc7d5c444-xvjwx.18dfa7bb2f357627
+      namespace: catalog
+    reason: Killing
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:39Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: catalog-7bc7d5c444
+      namespace: catalog
+      resourceVersion: "1086077"
+      uid: 88998b1d-5f46-4771-bef9-02dee5e7edec
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:39Z"
+    message: 'Created pod: catalog-7bc7d5c444-8psvt'
+    metadata:
+      name: catalog-7bc7d5c444.18dfa754e5591588
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: replicaset-controller
+    reportingInstance: ""
+    source:
+      component: replicaset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:54:10Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: catalog-7bc7d5c444
+      namespace: catalog
+      resourceVersion: "1086489"
+      uid: 88998b1d-5f46-4771-bef9-02dee5e7edec
+    kind: Event
+    lastTimestamp: "2026-10-18T14:54:10Z"
+    message: 'Created pod: catalog-7bc7d5c444-swk8v'
+    metadata:
+      name: catalog-7bc7d5c444.18dfa76a06d4bd3a
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: replicaset-controller
+    reportingInstance: ""
+    source:
+      component: replicaset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:58:21Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: catalog-7bc7d5c444
+      namespace: catalog
+      resourceVersion: "1086730"
+      uid: 88998b1d-5f46-4771-bef9-02dee5e7edec
+    kind: Event
+    lastTimestamp: "2026-10-18T14:58:21Z"
+    message: 'Created pod: catalog-7bc7d5c444-xvjwx'
+    metadata:
+      name: catalog-7bc7d5c444.18dfa7a465aa9094
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: replicaset-controller
+    reportingInstance: ""
+    source:
+      component: replicaset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:59:59Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: ReplicaSet
+      name: catalog-7bc7d5c444
+      namespace: catalog
+      resourceVersion: "1087745"
+      uid: 88998b1d-5f46-4771-bef9-02dee5e7edec
+    kind: Event
+    lastTimestamp: "2026-10-18T14:59:59Z"
+    message: 'Created pod: catalog-7bc7d5c444-gfcsr'
+    metadata:
+      name: catalog-7bc7d5c444.18dfa7bb346b4ec7
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: replicaset-controller
+    reportingInstance: ""
+    source:
+      component: replicaset-controller
+    type: Normal
+  - action: Binding
+    apiVersion: v1
+    eventTime: "2026-10-18T14:52:40.075934Z"
+    firstTimestamp: null
+    involvedObject:
+      apiVersion: v1
+      kind: Pod
+      name: catalog-mysql-0
+      namespace: catalog
+      resourceVersion: "1086142"
+      uid: a0ce5279-5eac-4887-9afc-2d8d250bfe3f
+    kind: Event
+    lastTimestamp: null
+    message: Successfully assigned catalog/catalog-mysql-0 to ip-10-42-108-77.us-east-2.compute.internal
+    metadata:
+      name: catalog-mysql-0.18dfa754f6c53672
+      namespace: catalog
+    reason: Scheduled
+    reportingComponent: default-scheduler
+    reportingInstance: default-scheduler-ip-172-17-54-100.us-east-2.compute.internal
+    source: {}
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-0
+      namespace: catalog
+      resourceVersion: "1086145"
+      uid: a0ce5279-5eac-4887-9afc-2d8d250bfe3f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:40Z"
+    message: Container image "public.ecr.aws/docker/library/mysql:8.0" already present on machine
+    metadata:
+      name: catalog-mysql-0.18dfa75516325697
+      namespace: catalog
+    reason: Pulled
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-0
+      namespace: catalog
+      resourceVersion: "1086145"
+      uid: a0ce5279-5eac-4887-9afc-2d8d250bfe3f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:40Z"
+    message: 'Created container: mysql'
+    metadata:
+      name: catalog-mysql-0.18dfa755179c008d
+      namespace: catalog
+    reason: Created
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: v1
+      fieldPath: spec.containers{mysql}
+      kind: Pod
+      name: catalog-mysql-0
+      namespace: catalog
+      resourceVersion: "1086145"
+      uid: a0ce5279-5eac-4887-9afc-2d8d250bfe3f
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:40Z"
+    message: Started container mysql
+    metadata:
+      name: catalog-mysql-0.18dfa7551b8a9f32
+      namespace: catalog
+    reason: Started
+    reportingComponent: kubelet
+    reportingInstance: ip-10-42-108-77.us-east-2.compute.internal
+    source:
+      component: kubelet
+      host: ip-10-42-108-77.us-east-2.compute.internal
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:40Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: StatefulSet
+      name: catalog-mysql
+      namespace: catalog
+      resourceVersion: "1086129"
+      uid: a161db0e-9bbe-44d0-8a09-e9706722e2c1
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:40Z"
+    message: create Pod catalog-mysql-0 in StatefulSet catalog-mysql successful
+    metadata:
+      name: catalog-mysql.18dfa754f6a0168e
+      namespace: catalog
+    reason: SuccessfulCreate
+    reportingComponent: statefulset-controller
+    reportingInstance: ""
+    source:
+      component: statefulset-controller
+    type: Normal
+  - apiVersion: v1
+    count: 1
+    eventTime: null
+    firstTimestamp: "2026-10-18T14:52:39Z"
+    involvedObject:
+      apiVersion: apps/v1
+      kind: Deployment
+      name: catalog
+      namespace: catalog
+      resourceVersion: "1086074"
+      uid: 7ff105a4-29d7-4036-bfee-0b7270b27375
+    kind: Event
+    lastTimestamp: "2026-10-18T14:52:39Z"
+    message: Scaled up replica set catalog-7bc7d5c444 from 0 to 1
+    metadata:
+      name: catalog.18dfa754e199686e
+      namespace: catalog
+    reason: ScalingReplicaSet
+    reportingComponent: deployment-controller
+    reportingInstance: ""
+    source:
+      component: deployment-controller
+    type: Normal
+kind: List
+metadata:
+  resourceVersion: ""

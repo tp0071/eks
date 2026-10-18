@@ -1,0 +1,68 @@
+apiVersion: v1
+items:
+  - addressType: IPv4
+    apiVersion: discovery.k8s.io/v1
+    endpoints:
+      - addresses:
+          - 10.42.128.48
+        conditions:
+          ready: true
+          serving: true
+          terminating: false
+        nodeName: ip-10-42-133-47.us-east-2.compute.internal
+        targetRef:
+          kind: Pod
+          name: catalog-7bc7d5c444-gfcsr
+          namespace: catalog
+          uid: d1f22a29-9402-4c03-8fbc-51ced3b444e2
+        zone: us-east-2b
+    kind: EndpointSlice
+    metadata:
+      annotations:
+        endpoints.kubernetes.io/last-change-trigger-time: "2026-10-18T15:00:11Z"
+      generateName: catalog-
+      labels:
+        app.kubernetes.io/created-by: eks-workshop
+        endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+        kubernetes.io/service-name: catalog
+      name: catalog-kf29s
+      namespace: catalog
+    ports:
+      - name: http
+        port: 8080
+        protocol: TCP
+  - addressType: IPv4
+    apiVersion: discovery.k8s.io/v1
+    endpoints:
+      - addresses:
+          - 10.42.113.194
+        conditions:
+          ready: true
+          serving: true
+          terminating: false
+        hostname: catalog-mysql-0
+        nodeName: ip-10-42-108-77.us-east-2.compute.internal
+        targetRef:
+          kind: Pod
+          name: catalog-mysql-0
+          namespace: catalog
+          uid: a0ce5279-5eac-4887-9afc-2d8d250bfe3f
+        zone: us-east-2a
+    kind: EndpointSlice
+    metadata:
+      annotations:
+        endpoints.kubernetes.io/last-change-trigger-time: "2026-10-18T14:52:41Z"
+      generateName: catalog-mysql-
+      labels:
+        app.kubernetes.io/created-by: eks-workshop
+        endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+        kubernetes.io/service-name: catalog-mysql
+      name: catalog-mysql-qxghx
+      namespace: catalog
+    ports:
+      - name: mysql
+        port: 3306
+        protocol: TCP
+kind: List
+metadata:
+  resourceVersion: ""
